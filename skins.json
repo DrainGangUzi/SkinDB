@@ -1,1 +1,751 @@
-{"exclusions":["M60","Photon Blades","Scythe","Shiv","Slayer","BFG","Balisong Stiletto","M4A1 OPM","M4A1 Heritage pending separate retest"],"notes":["M4A1 Tiles/Aureus/Colonial source records were tested successfully; other families use previously recorded family rules with newly compiled Studio assets, and are not all separately verified.","Some Studio PBR-only skins lack the preview TextureID used for SA-less holsters: original holster texture remains unless a tested ID is known.","Secret/modelSwap geometry is cloned from its existing in-game source. JSON cannot manufacture exact Roblox MeshPart import metadata.","Optional custom animations/sounds/effects and unrelated gameplay configs are not loaded or executed.","TEC-9 autofix confirmed all three live body MeshIds (8389619923, 8389620604, 8389621240) and enabled all nine TEC-9 skin entries in the local database.","SKS Gold golden particle tint is implemented as optional local cosmeticEffects; original ParticleEmitter properties are restored on skin change, holster, revert, or disable. Custom shooting audio/animations remain unimplemented."],"version":"0.4.2","modelSwapGeometry":{"fireaxe_tactical":{"family":"Fire Axe","baseMeshId":"14983469029","parts":[{"MeshId":"14984240287","relativeCFrame":[0,0.388748169,0.0448131561,1,0,0,0,0.996324301,-0.0856625736,0,0.0856625736,0.996324301],"Size":[0.1629411131,3.7923240662,1.3506113291]}]},"wrench_hammer":{"family":"Wrench","baseMeshId":"8501636555","parts":[{"TextureID":"15448075670","MeshId":"14984283674","relativeCFrame":[0,0.466827393,-0.000488281,1,0,0,0,1,0,0,0,1],"Size":[0.2910651565,2.275894165,0.981556952]}]},"bat_cricket":{"family":"Bat","baseMeshId":"14983650592","parts":[{"TextureID":"15449171966","MeshId":"15447781718","relativeCFrame":[0,1.250595093,0.025715172,1,0,0,0,-0.997743666,0.06714078,0,-0.06714078,-0.997743666],"Size":[0.4766125381,3.8386726379,0.4179175198]}]},"bat_cashcane":{"cloneExactPreviewParts":true,"appearance":{"TextureID":"16299762278","Material":"Plastic","SurfaceAppearance":{"ColorMap":"16300595972","NormalMap":"16299761577","RoughnessMap":"16300595459","MetalnessMap":"16299760247"},"Color":[0.639216,0.635294,0.647059]},"family":"Bat","baseMeshId":"14983650592","parts":[{"relativeCFrame":[-0.000547647,2.907426834,0.040021911,1,0,0,0,0.999998569,0.001708448,0,-0.001708448,0.999998569],"MeshId":"16299749625","name":"dollar_Lopoly","Size":[0.1492574811,0.6698490977,0.4972775578]},{"relativeCFrame":[-0.000547647,0.925457001,0.044916004,1,0,0,0,0.999998569,0.001708448,0,-0.001708448,0.999998569],"MeshId":"16299749692","name":"staff_Lopoly","Size":[0.2691464722,3.3082199097,0.269146502]},{"relativeCFrame":[0.092766285,2.922503471,0.041503832,1,0,0,0,0.999998569,0.001708448,0,-0.001708448,0.999998569],"MeshId":"16299749583","name":"dollar2_Lopoly","Size":[0.03168137744,0.7257916331,0.1568236798]}]},"machete_zk":{"family":"Machete","baseMeshId":"14984016481","parts":[{"TextureID":"15039202907","MeshId":"15028992503","relativeCFrame":[0,1.43208313,0.008300781,1,0,0,0,-0.032298446,-0.99947834,0,0.99947834,-0.032298446],"Size":[0.0627929866,0.677543819,4.0126571655]}]},"rambo_bowie":{"family":"Rambo","baseMeshId":"14983928996","parts":[{"TextureID":"16268374887","MeshId":"16258743321","relativeCFrame":[-0.000488281,0.796699524,0.008789062,1,0,0,0,-0.015105925,-0.999885917,0,0.999885917,-0.015105925],"Size":[0.1935875267,0.6799337864,3.4810802937]}]}},"skins":{"magnum_ind":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.magnum_ind","available":true,"family":"Magnum","kind":"variantModel","hidden":true},"wrench_greenmask":{"meshIds":["8501636555"],"available":true,"family":"Wrench","kind":"appearance","textureID":"15451673831","surfaceAppearance":{"ColorMap":"15451673568","NormalMap":"15451674169","RoughnessMap":"15451674374","MetalnessMap":"15451672959"}},"fireaxe_xo":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"16357722311","NormalMap":"16357722854","RoughnessMap":"16357723037","MetalnessMap":"16357722476"}},"sawnoff_logs":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","meshOverrides":{"6332444961":{"TextureID":"6338371874"},"6332445788":{"TextureID":"6338371874"}},"surfaceAppearance":{"ColorMap":"13556252494","NormalMap":"13556254217","RoughnessMap":"13556254787","MetalnessMap":"13556253379"}},"baton_silverbanded":{"meshIds":["15449361446","15449361723","15449362005"],"available":true,"family":"Baton","kind":"appearance","surfaceAppearance":{"ColorMap":"16688297084","NormalMap":"16688298548","RoughnessMap":"16688298832","MetalnessMap":"16688297467"}},"beretta_urbanred":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","textureID":"13841598427","surfaceAppearance":{"ColorMap":"13841595045","NormalMap":"13841596345","RoughnessMap":"13841597360","MetalnessMap":"13841595733"}},"tec9_lilac":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"13841531857","NormalMap":"13841534362","RoughnessMap":"13841535132","MetalnessMap":"13841533434"}},"machete_zk_forest":{"sourcePreviewName":"machete_zk_forest","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039175899","NormalMap":"15039174978","RoughnessMap":"15039174719","MetalnessMap":"15039175555"}},"bat_opmcane":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"17727652050","NormalMap":"17727652050","RoughnessMap":"17727652050","MetalnessMap":"17727652050"}},"ithaca_ithcuh":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"16910986091","NormalMap":"16910987518","RoughnessMap":"16910987829","MetalnessMap":"16910986411"}},"fireaxe_tactical_forest":{"sourcePreviewName":"fireaxe_tactical_forest","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039850470","NormalMap":"15039850470","RoughnessMap":"15039850470","MetalnessMap":"15039850470"}},"tommy_currant":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","textureID":"13841589575","surfaceAppearance":{"ColorMap":"13841583772","NormalMap":"13841586063","RoughnessMap":"13841586825","MetalnessMap":"13841584989"}},"deagle_federation":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","textureID":"15178328946","surfaceAppearance":{"ColorMap":"13841710519","NormalMap":"13841679919","RoughnessMap":"13841712407","MetalnessMap":"13841679235"}},"bat_carousel":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"82343280013138","NormalMap":"79599949486605","RoughnessMap":"108344023374846","MetalnessMap":"81486210290291"}},"aks_crimcola":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"13387556541","NormalMap":"13387558142","RoughnessMap":"13387559359","MetalnessMap":"13387557277"}},"deagle_aurora":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"137473693247245","NormalMap":"128356332134662","RoughnessMap":"136446045422713","MetalnessMap":"140390164089197"}},"rambo_bowie_damascus":{"sourcePreviewName":"rambo_bowie_damascus","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16258807849","NormalMap":"16258812214","RoughnessMap":"16258808507","MetalnessMap":"16258808036"}},"tommy_headstone":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","surfaceAppearance":{"ColorMap":"15177084790","NormalMap":"15177086301","RoughnessMap":"15177087034","MetalnessMap":"15177085411"}},"katana_acacia":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","surfaceAppearance":{"ColorMap":"16688144837","NormalMap":"16688145997","RoughnessMap":"16688146261","MetalnessMap":"16688145249"}},"fireaxe_tactical_bloodlust":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"17897231982","NormalMap":"17897231982","RoughnessMap":"17897231982","MetalnessMap":"17897231982"}},"fnp_tan":{"meshIds":["9170850029","9170851076","9170851624","9170852119","9170852685","9170853190","9170853588"],"available":true,"family":"FNP","kind":"appearance","surfaceAppearance":{"ColorMap":"15998532953","NormalMap":"15998535261","RoughnessMap":"15998535612","MetalnessMap":"15998533821"}},"machete_zk_olivedrift":{"sourcePreviewName":"machete_zk_olivedrift","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15070276224","NormalMap":"15070275513","RoughnessMap":"15070275156","MetalnessMap":"15070275774"}},"1911_ironsight":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","textureID":"13388235569","surfaceAppearance":{"ColorMap":"13388236414","NormalMap":"13388219329","RoughnessMap":"13388219893","MetalnessMap":"13388218612"}},"rambo_bowie_blackpearl":{"sourcePreviewName":"rambo_bowie_blackpearl","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16268374444"}},"magnum_arcticapex":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"15710938728","NormalMap":"15710938478","RoughnessMap":"15710937956","MetalnessMap":"15710938223"}},"aks_jadestone":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","textureID":"13712930979","surfaceAppearance":{"ColorMap":"13712920992","NormalMap":"13712922823","RoughnessMap":"13712861089","MetalnessMap":"13712921779"}},"g17_amethyst":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","textureID":"9344560860","surfaceAppearance":{"ColorMap":"9344554991","NormalMap":"9344557259","RoughnessMap":"9344558040","MetalnessMap":"9344556621"}},"machete_ulacylon":{"meshIds":["14984016481"],"available":true,"family":"Machete","kind":"appearance","surfaceAppearance":{"ColorMap":"0","NormalMap":"0","RoughnessMap":"0","MetalnessMap":"0"}},"deagle_eagleeye":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"13937646988","NormalMap":"13935410021","RoughnessMap":"13935410676","MetalnessMap":"13937635046"}},"bayonet_redtopo":{"meshIds":["14982950107"],"available":true,"family":"Bayonet","kind":"appearance","surfaceAppearance":{"ColorMap":"14982984551","NormalMap":"14982987123","RoughnessMap":"14982988058","MetalnessMap":"14982986074"}},"magnum_bronze":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"13388529824","NormalMap":"13388534835","RoughnessMap":"13388535886","MetalnessMap":"13388533297"}},"machete_scepter":{"meshIds":["14984016481"],"available":true,"family":"Machete","kind":"appearance","surfaceAppearance":{"ColorMap":"14984201334","NormalMap":"14984009345","RoughnessMap":"14984010006","MetalnessMap":"14984008708"}},"rambo_slasha":{"meshIds":["14983928996"],"available":true,"family":"Rambo","kind":"appearance","textureID":"14983934299","surfaceAppearance":{"ColorMap":"14983924234","NormalMap":"14983926219","RoughnessMap":"14983927155"}},"ithaca_linedlegacy":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"13388409062","NormalMap":"13388410614","RoughnessMap":"13388411371","MetalnessMap":"13388409925"}},"ithaca_darkmatter":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","textureID":"15998588320","surfaceAppearance":{"ColorMap":"15998572471","NormalMap":"15998589068","RoughnessMap":"15998573851","MetalnessMap":"15998571662"}},"mare_burial":{"meshIds":["8350209132","8350209611","8350210610","8350211256"],"available":true,"family":"Mare","kind":"appearance","surfaceAppearance":{"ColorMap":"112931262763361","NormalMap":"119111362077095","RoughnessMap":"126479771394001","MetalnessMap":"82077890421504"}},"machete_slasher":{"meshIds":["14984016481"],"available":true,"family":"Machete","kind":"appearance","surfaceAppearance":{"ColorMap":"128294287312695","NormalMap":"131745800088616","RoughnessMap":"81145205731423","MetalnessMap":"130104370249328"}},"taiga_404":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","textureID":"15448951687","surfaceAppearance":{"ColorMap":"15448951687"}},"sshorty_checkmate":{"meshIds":["8369736984","8369737655","8369738413"],"available":true,"family":"Super-Shorty","kind":"appearance","textureID":"13713148936","surfaceAppearance":{"ColorMap":"13713146952","NormalMap":"13713130525","RoughnessMap":"13713131369","MetalnessMap":"13713129636"}},"sawnoff_ectoplasm":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"128902407409114","NormalMap":"108404854707679","RoughnessMap":"83853433900479","MetalnessMap":"140581640088992"}},"scout_redwood":{"meshIds":["9778535074","9778536281","9778537695","9778538440","9778539357","9778540201","9778540980"],"available":true,"family":"Scout","kind":"appearance","textureID":"13713221958","surfaceAppearance":{"ColorMap":"13713216013","NormalMap":"13713217944","RoughnessMap":"13713218967","MetalnessMap":"13713216835"}},"sks_umbrella":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"13841605579","NormalMap":"13841607333","RoughnessMap":"13388321173","MetalnessMap":"13841606562"}},"mac10_tropical":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","textureID":"13712974251","surfaceAppearance":{"ColorMap":"13712964810","NormalMap":"13556191703","RoughnessMap":"13712967534","MetalnessMap":"13712966361"}},"wrench_mrwrench":{"meshIds":["8501636555"],"available":true,"family":"Wrench","kind":"appearance","surfaceAppearance":{"ColorMap":"16688441788","NormalMap":"16688443867","RoughnessMap":"16688444803","MetalnessMap":"16688442409"}},"baton_marbleized":{"meshIds":["15449361446","15449361723","15449362005"],"available":true,"family":"Baton","kind":"appearance","surfaceAppearance":{"ColorMap":"16688078640","NormalMap":"16688079504","RoughnessMap":"16688079856","MetalnessMap":"16688078954"}},"katana_modest":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","surfaceAppearance":{"ColorMap":"15445243396","NormalMap":"15445242988","RoughnessMap":"15445242744","MetalnessMap":"15445243198"}},"golfclub_mocha":{"meshIds":["14983546684"],"available":true,"family":"Golf Club","kind":"appearance","textureID":"15445223443","surfaceAppearance":{"ColorMap":"15445223264","NormalMap":"15445222881","RoughnessMap":"15445222663","MetalnessMap":"15445223049"}},"deagle_presidential":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"18198669148","NormalMap":"18198670693","RoughnessMap":"18198670387","MetalnessMap":"18198669774"}},"wrench_tendencies":{"meshIds":["8501636555"],"available":true,"family":"Wrench","kind":"appearance","surfaceAppearance":{"ColorMap":"15177035163","NormalMap":"15177053203","RoughnessMap":"15177053981","MetalnessMap":"15177052525"}},"magnum_ironhammer":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"18319381612","NormalMap":"18319380616","RoughnessMap":"18319380198","MetalnessMap":"18319381193"}},"sks_snowcoat":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"111855555460594","NormalMap":"136130186436149","RoughnessMap":"104979234731806","MetalnessMap":"129207797511470"}},"sledgehammer_holidaymaul":{"meshIds":["15447603217"],"available":true,"family":"Sledgehammer","kind":"appearance","surfaceAppearance":{"ColorMap":"87288546728458","NormalMap":"111003335206838","RoughnessMap":"132451943870957","MetalnessMap":"119656901551936"}},"deagle_plasma":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"13567908266","NormalMap":"13567912487","RoughnessMap":"13567913639","MetalnessMap":"13567909944"}},"mac10_hazmac":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"70974550171047"}},"chainsaw_skullforged":{"meshIds":["14983349557","14983385267","14983386243","14983387157","14983387851","14983389607","14983390935","14983422513","14983424521","14983425394","14983425931"],"available":true,"family":"Chainsaw","kind":"appearance","textureID":"15445199244","surfaceAppearance":{"ColorMap":"15445199978","NormalMap":"15445199616","RoughnessMap":"15445199434","MetalnessMap":"15445199827"}},"katana_saphira":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","textureID":"14983772470","surfaceAppearance":{"ColorMap":"14983754881","NormalMap":"14983756440","RoughnessMap":"14983757613","MetalnessMap":"14983755598"}},"crowbar_cobalt":{"meshIds":["8999004640"],"available":true,"family":"Crowbar","kind":"appearance","textureID":"14982803953","surfaceAppearance":{"ColorMap":"14982777465","NormalMap":"8999009362","RoughnessMap":"8999009938","MetalnessMap":"8999008742"}},"mac10_cryofox":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"72676229182235","NormalMap":"98358790768254","RoughnessMap":"75331173382652","MetalnessMap":"99722143158841"}},"sks_m1garand":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.sks_m1garand","available":true,"family":"SKS","kind":"variantModel","hidden":true},"aks_battleworncamo":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"13842104374","NormalMap":"13841838347","RoughnessMap":"13841839392","MetalnessMap":"13841837380"}},"aks_gravebound":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"80179995184396","NormalMap":"107567151945543","RoughnessMap":"125744338158238","MetalnessMap":"116477059166666"}},"fireaxe_axon":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"16688204062","NormalMap":"16688205447","RoughnessMap":"16688206001","MetalnessMap":"16688204499"}},"rambo_bowie_rustic":{"sourcePreviewName":"rambo_bowie_rustic","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16268377036"}},"tommy_unclesam":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","surfaceAppearance":{"ColorMap":"13936670325","NormalMap":"13936671749","RoughnessMap":"13936672741","MetalnessMap":"13936670921"}},"1911_sandwaves":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","surfaceAppearance":{"ColorMap":"15998635906","NormalMap":"15998637184","RoughnessMap":"15998637521","MetalnessMap":"15998636834"}},"shovel_heartbreaker":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"16355295686","NormalMap":"16355296613","RoughnessMap":"16355296920","MetalnessMap":"16355296031"}},"beretta_clef":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","textureID":"13387793497","surfaceAppearance":{"ColorMap":"13387587315","NormalMap":"13387589539","RoughnessMap":"13387590166","MetalnessMap":"13387588930"}},"1911_rebel":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","surfaceAppearance":{"ColorMap":"13410196884","NormalMap":"13410197562","RoughnessMap":"13410199143","MetalnessMap":"13410198420"}},"tec9_burgundypine":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"134671657569127"}},"beretta_gold":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","surfaceAppearance":{"ColorMap":"15071881699","NormalMap":"15071881251","RoughnessMap":"15071880826","MetalnessMap":"15071881490"}},"tec9_import":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"13556231753","NormalMap":"13556233332","RoughnessMap":"13556234000","MetalnessMap":"13556232611"}},"deagle_gingerbread":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"15695335320","NormalMap":"15695334801","RoughnessMap":"15695334537","MetalnessMap":"15695335028"}},"deagle_ember":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"16041798829","NormalMap":"16041799824","RoughnessMap":"16041799468","MetalnessMap":"16041799162"}},"balisong_tan":{"meshIds":["14983718375","14983724475","14983725068","14983725628"],"available":true,"family":"Balisong","kind":"appearance","surfaceAppearance":{"ColorMap":"15445189234","NormalMap":"15445188739","RoughnessMap":"15445188553","MetalnessMap":"15445188960"}},"mac10_lostnfound":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"13841544929","NormalMap":"13841547584","RoughnessMap":"13841548498","MetalnessMap":"13841546059"}},"magnum_bills":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"13935343468","NormalMap":"13841632677","RoughnessMap":"13851639717","MetalnessMap":"13841628817"}},"bat_cricket_forest":{"sourcePreviewName":"bat_cricket_forest","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449109863","NormalMap":"15449109253","RoughnessMap":"15449108585","MetalnessMap":"15449109592"}},"metalbat_jinglebat":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"70405837770718","NormalMap":"77431592180732","RoughnessMap":"116979492133084","MetalnessMap":"77098518527898"}},"beretta_woodenblaster":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","surfaceAppearance":{"ColorMap":"15695411633","NormalMap":"15695410939","RoughnessMap":"15695410486","MetalnessMap":"15695411201"}},"metalbat_urbanleather":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"14982857134","NormalMap":"14982858953","RoughnessMap":"14982860145","MetalnessMap":"14982858267"}},"aks_decay74u":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"96042163422893","NormalMap":"76982128719121","RoughnessMap":"106224221514677","MetalnessMap":"105051079655367"}},"taiga_bubblegum":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","surfaceAppearance":{"ColorMap":"14983876632","NormalMap":"14983878474","RoughnessMap":"14983879458","MetalnessMap":"14983877458"}},"g17_grunch":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","surfaceAppearance":{"ColorMap":"131243696649384","NormalMap":"110786225901610","RoughnessMap":"102457279530285","MetalnessMap":"96521999747475"}},"sawnoff_radiumscatter":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"126628134932565","NormalMap":"75639168711771","RoughnessMap":"101340694545362","MetalnessMap":"116577586899919"}},"katana_arctx":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","surfaceAppearance":{"ColorMap":"15695443241","NormalMap":"15695442818","RoughnessMap":"15695442634","MetalnessMap":"15695442957"}},"taiga_conductor":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","surfaceAppearance":{"ColorMap":"14982924033","NormalMap":"14982929168","RoughnessMap":"14982929858","MetalnessMap":"14982928092"}},"m4a1_gold":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"18231287937","NormalMap":"13714331534","RoughnessMap":"13714329843","MetalnessMap":"13714330861"}},"mac10_cheese":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"13556188816","NormalMap":"13556191703","RoughnessMap":"13556192448","MetalnessMap":"13556190532"}},"m4a1_inferno":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","multiAppearanceNeedsReview":true,"surfaceAppearance":{"ColorMap":"15417229857","NormalMap":"15417229857","RoughnessMap":"15417229857","MetalnessMap":"15417229857"}},"aks_formula":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"16010500192","NormalMap":"16010501509","RoughnessMap":"16010500911","MetalnessMap":"16010500530"}},"sshorty_loveletter":{"meshIds":["8369736984","8369737655","8369738413"],"available":true,"family":"Super-Shorty","kind":"appearance","surfaceAppearance":{"ColorMap":"16355338517","NormalMap":"16355339662","RoughnessMap":"16355340721","MetalnessMap":"16355338911"}},"sawnoff_glacial":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"13030805318","NormalMap":"13030811843","RoughnessMap":"13030812846","MetalnessMap":"13030809551"}},"m4a1_yellowstone":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"15998610605","NormalMap":"15998611905","RoughnessMap":"15998611008","MetalnessMap":"15998611361"}},"uzi_coldshell":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","surfaceAppearance":{"ColorMap":"117085656996740","NormalMap":"108960126724636","RoughnessMap":"105403069503517"}},"sks_jester":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"13343167267","NormalMap":"13343168956","RoughnessMap":"13343169804","MetalnessMap":"13343167958"}},"beretta_silvered":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","textureID":"15998401350","surfaceAppearance":{"ColorMap":"15998409351","NormalMap":"15998409707","RoughnessMap":"15998409987","MetalnessMap":"15998407832"}},"g17_gleagle":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","surfaceAppearance":{"ColorMap":"16911005097","NormalMap":"16911007007","RoughnessMap":"16911007567","MetalnessMap":"16911005667"}},"katana_alchemist":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","surfaceAppearance":{"ColorMap":"88337986924078","NormalMap":"81845094552324","RoughnessMap":"108578604114663","MetalnessMap":"112307168858144"}},"sshorty_firecracker":{"meshIds":["8369736984","8369737655","8369738413"],"available":true,"family":"Super-Shorty","kind":"appearance","surfaceAppearance":{"ColorMap":"18149799297","NormalMap":"18149800730","RoughnessMap":"18149801071","MetalnessMap":"18149799675"}},"ithaca_peppershot":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"97444135069232","NormalMap":"96665384726966","RoughnessMap":"120407939946866","MetalnessMap":"108976361976375"}},"scarh_milspec":{"meshIds":["13030911835","13030913085","13030916224","13030918901","13030921643","13030922444"],"available":true,"family":"SCAR-H","kind":"appearance","multiAppearanceNeedsReview":true,"surfaceAppearance":{"ColorMap":"13703885359","NormalMap":"12548441857","RoughnessMap":"13703886985","MetalnessMap":"13703886217"}},"sledgehammer_weightedbronze":{"meshIds":["15447603217"],"available":true,"family":"Sledgehammer","kind":"appearance","surfaceAppearance":{"ColorMap":"16690699401","NormalMap":"16690698888","RoughnessMap":"16690697721","MetalnessMap":"16690699142"}},"1911_stainless":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","surfaceAppearance":{"ColorMap":"13842569053","NormalMap":"13841646259","RoughnessMap":"13841646833","MetalnessMap":"13841645564"}},"bayonet_violet":{"meshIds":["14982950107"],"available":true,"family":"Bayonet","kind":"appearance","textureID":"15448020909","surfaceAppearance":{"ColorMap":"15448010266","NormalMap":"15447980694","RoughnessMap":"15447997883","MetalnessMap":"15448006284"}},"wrench_hammer_kintsugi":{"sourcePreviewName":"wrench_hammer_kintsugi","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039897448","NormalMap":"15039896951","RoughnessMap":"15039896757","MetalnessMap":"15039897282"}},"fireaxe_tactical_blackpearl":{"sourcePreviewName":"fireaxe_tactical_blackpearl","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15448187664","NormalMap":"15448188601","RoughnessMap":"15448187026","MetalnessMap":"15448187296"}},"fireaxe_tactical_olivedrift":{"sourcePreviewName":"fireaxe_tactical_olivedrift","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15070258787","NormalMap":"15070258265","RoughnessMap":"15070257826","MetalnessMap":"15070258558"}},"mare_maritime":{"meshIds":["8350209132","8350209611","8350210610","8350211256"],"available":true,"family":"Mare","kind":"appearance","textureID":"15998688712","removeSurfaceAppearance":true},"wrench_hammer_rustic":{"sourcePreviewName":"wrench_hammer_rustic","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039905170"}},"m4a1_colacamo":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"16910927803","NormalMap":"16910929076","RoughnessMap":"16910929618","MetalnessMap":"16910928172"}},"fireaxe_tactical_uwu":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"17900219418","NormalMap":"17900219418","RoughnessMap":"17900219418","MetalnessMap":"17900219418"}},"tommy_gold":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","surfaceAppearance":{"ColorMap":"15039147920","NormalMap":"15039147363","RoughnessMap":"15039147120","MetalnessMap":"15039147721"}},"bat_cricket_rustic":{"sourcePreviewName":"bat_cricket_rustic","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449142959","NormalMap":"15449142313","RoughnessMap":"15449144008","MetalnessMap":"15449142605"}},"balisong_viper":{"meshIds":["14983718375","14983724475","14983725068","14983725628"],"available":true,"family":"Balisong","kind":"appearance","surfaceAppearance":{"ColorMap":"14983742104","NormalMap":"14983728828","RoughnessMap":"14983729641","MetalnessMap":"14983727617"}},"beretta_vampirehunter":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","surfaceAppearance":{"ColorMap":"137465478194507","NormalMap":"137366146381355","RoughnessMap":"138742357830701","MetalnessMap":"116268699853609"}},"bayonet_stonecut":{"meshIds":["14982950107"],"available":true,"family":"Bayonet","kind":"appearance","surfaceAppearance":{"ColorMap":"95862205225241"}},"mare_gold":{"meshIds":["8350209132","8350209611","8350210610","8350211256"],"available":true,"family":"Mare","kind":"appearance","surfaceAppearance":{"ColorMap":"16560241772","NormalMap":"8969047074","RoughnessMap":"8969056777","MetalnessMap":"8969034988"}},"rambo_bowie_bluegem":{"sourcePreviewName":"rambo_bowie_bluegem","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16268374887"}},"crowbar_hazardous":{"meshIds":["8999004640"],"available":true,"family":"Crowbar","kind":"appearance","surfaceAppearance":{"ColorMap":"16688167039","NormalMap":"16688167807","RoughnessMap":"16688168882","MetalnessMap":"16688166309"}},"g17_benjamin":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","surfaceAppearance":{"ColorMap":"18198686840","NormalMap":"18198687808","RoughnessMap":"18198688370","MetalnessMap":"18198687025"}},"mac10_digital":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"13388148081","NormalMap":"13387827028","RoughnessMap":"13387824789","MetalnessMap":"13387826008"}},"bat_laminate":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"14983647732","NormalMap":"14983654099","RoughnessMap":"14983654931","MetalnessMap":"14983653411"}},"m320_nyan":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.m320_nyan","available":true,"family":"M320","kind":"variantModel","hidden":true},"mp7_navy":{"meshIds":["8434174485","8434175515","8434176289","8434177000","8434177639","8434179546"],"available":true,"family":"MP7","kind":"appearance","surfaceAppearance":{"ColorMap":"13714362770","NormalMap":"13404160425","RoughnessMap":"13404161300","MetalnessMap":"13404142924"}},"bat_cosmic":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","textureID":"15445293206","surfaceAppearance":{"ColorMap":"15445293206","NormalMap":"15445293206","RoughnessMap":"15445293206","MetalnessMap":"15445293206"}},"g17_tan":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","textureID":"13841573907","surfaceAppearance":{"ColorMap":"13841571102","NormalMap":"13841572406","RoughnessMap":"13841572919","MetalnessMap":"13841571957"}},"wrench_dalgona":{"meshIds":["8501636555"],"available":true,"family":"Wrench","kind":"appearance","surfaceAppearance":{"ColorMap":"73802373376033","NormalMap":"78442972912417","RoughnessMap":"131253216615104","MetalnessMap":"107222122083647"}},"crowbar_cobaltpry":{"meshIds":["8999004640"],"available":true,"family":"Crowbar","kind":"appearance","surfaceAppearance":{"ColorMap":"101584078628802"}},"magnum_abstract":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","textureID":"13851642216","surfaceAppearance":{"ColorMap":"13851638932","NormalMap":"13841632677","RoughnessMap":"13851639717","MetalnessMap":"13841628817"}},"taiga_scalemail":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","surfaceAppearance":{"ColorMap":"18335324158","NormalMap":"18335324158","RoughnessMap":"18335324158","MetalnessMap":"18335324158"}},"tec9_star9":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"13387502788","NormalMap":"13387508121","RoughnessMap":"13387509249","MetalnessMap":"13387506611"}},"g17_oxide":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","textureID":"13556396197","surfaceAppearance":{"ColorMap":"13556385916","NormalMap":"13556387454","RoughnessMap":"13556388249","MetalnessMap":"13556386783"}},"deagle_exoticTest":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"15445293206","NormalMap":"15445293206","RoughnessMap":"15445293206","MetalnessMap":"15445293206"}},"m4a1_monochrome":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","textureID":"13388680352","removeSurfaceAppearance":true},"wrench_hammer_vanilla":{"sourcePreviewName":"wrench_hammer_vanilla","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"14984302065"}},"mac10_eaglespride":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"18213166722","NormalMap":"18213167808","RoughnessMap":"18213167331","MetalnessMap":"18213166235"}},"beretta_walker":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","surfaceAppearance":{"ColorMap":"15177173325","NormalMap":"15177176717","RoughnessMap":"15177177175","MetalnessMap":"15177174964"}},"ithaca_hellfire":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.ithaca_hellfire","available":true,"family":"Ithaca","kind":"variantModel","hidden":true,"missingSurfaceFallback":{"ColorMap":"120094510362818","NormalMap":"89491017367979","RoughnessMap":"131860023245181","MetalnessMap":"113748442311389"}},"sks_digital":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"9341995268","NormalMap":"9341965058","RoughnessMap":"9341941167","MetalnessMap":"9341938929"}},"ithaca_engraved":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"13388409062","NormalMap":"13388410614","RoughnessMap":"13388411371","MetalnessMap":"13388409925"}},"scarh_torchbearer":{"meshIds":["13030911835","13030913085","13030916224","13030918901","13030921643","13030922444"],"available":true,"family":"SCAR-H","kind":"appearance","surfaceAppearance":{"ColorMap":"18167598887","NormalMap":"18167599922","RoughnessMap":"18167600266","MetalnessMap":"18167600622"}},"machete_rainbow":{"meshIds":["14984016481"],"available":true,"family":"Machete","kind":"appearance","surfaceAppearance":{"ColorMap":"16952073307","NormalMap":"16910957239","RoughnessMap":"16910956716","MetalnessMap":"16910957712"}},"fireaxe_candied":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"130045605147461","NormalMap":"97390300326109","RoughnessMap":"110810262511033","MetalnessMap":"123431043270974"}},"sawnoff_grandprix":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"13841748041","NormalMap":"13841750446","RoughnessMap":"13556254787","MetalnessMap":"13841749691"}},"uzi_grape":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","surfaceAppearance":{"ColorMap":"13387917991","NormalMap":"13343337433","RoughnessMap":"13343338573","MetalnessMap":"13343336766"}},"mp7_hellrazor":{"meshIds":["8434174485","8434175515","8434176289","8434177000","8434177639","8434179546"],"available":true,"family":"MP7","kind":"appearance","textureID":"13842806014","surfaceAppearance":{"ColorMap":"13842812065","NormalMap":"13841893577","RoughnessMap":"13841894868","MetalnessMap":"13841892618"}},"sledgehammer_porcelain":{"meshIds":["15447603217"],"available":true,"family":"Sledgehammer","kind":"appearance","textureID":"15447463984","surfaceAppearance":{"ColorMap":"15447463984","NormalMap":"15447463984","RoughnessMap":"15447463984","MetalnessMap":"15447463984"}},"bat_cricket_blackpearl":{"sourcePreviewName":"bat_cricket_blackpearl","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449155266","NormalMap":"15449154552","RoughnessMap":"15449153981","MetalnessMap":"15449154889"}},"deagle_reaper":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"129373670599388","NormalMap":"135131518870523","RoughnessMap":"103928442125868","MetalnessMap":"82220336659004"}},"bat_bats":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"115906886710839","NormalMap":"92979688072877","RoughnessMap":"118224123809366","MetalnessMap":"110227862094041"}},"deagle_gold":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"9422465914","NormalMap":"9368506864","RoughnessMap":"9422469052","MetalnessMap":"9422467019"}},"uzi_rust":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","surfaceAppearance":{"ColorMap":"13715502850","NormalMap":"13715505019","RoughnessMap":"13715505740","MetalnessMap":"13715504263"}},"rambo_rimecarver":{"meshIds":["14983928996"],"available":true,"family":"Rambo","kind":"appearance","surfaceAppearance":{"ColorMap":"130691379543412","NormalMap":"129286248438410","RoughnessMap":"108901175314678","MetalnessMap":"123670331740987"}},"fireaxe_tactical_rustic":{"sourcePreviewName":"fireaxe_tactical_rustic","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039869342","NormalMap":"15039869342","RoughnessMap":"15039869342","MetalnessMap":"15039869342"}},"machete_zk_emerald":{"sourcePreviewName":"machete_zk_emerald","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16303083189","NormalMap":"15448251602","RoughnessMap":"15448250695","MetalnessMap":"15448251916"}},"g17_elimination":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","multiAppearanceNeedsReview":true,"surfaceAppearance":{"ColorMap":"94164067871562","NormalMap":"75074216652378","RoughnessMap":"112379003610843","MetalnessMap":"133337669834230"}},"g17_hotpink":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","textureID":"15998559023","surfaceAppearance":{"ColorMap":"15998557522","NormalMap":"15998557948","RoughnessMap":"15998558305","MetalnessMap":"15998558655"}},"ump_lesion":{"meshIds":["8604622147","8604623001","8604624774","8604634883"],"available":true,"family":"UMP","kind":"appearance","surfaceAppearance":{"ColorMap":"15177221559","NormalMap":"15177222689","RoughnessMap":"15177223202","MetalnessMap":"15177222124"}},"metalbat_teslacoil":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"137524582120989"}},"wrench_schematic":{"meshIds":["8501636555"],"available":true,"family":"Wrench","kind":"appearance","surfaceAppearance":{"ColorMap":"106834702047296","NormalMap":"91292796643310","RoughnessMap":"100319708994798","MetalnessMap":"131380169924203"}},"metalbat_vibecheck":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"15445259400","NormalMap":"15445259400","RoughnessMap":"15445259400","MetalnessMap":"15445259400"}},"balisong_fade":{"meshIds":["14983718375","14983724475","14983725068","14983725628"],"available":true,"family":"Balisong","kind":"appearance","textureID":"16688046816","surfaceAppearance":{"ColorMap":"16688046451","NormalMap":"16688048275","RoughnessMap":"16688047264","MetalnessMap":"16688048586"}},"m4a1_circuit":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"13841654362","NormalMap":"13841656305","RoughnessMap":"13841657147","MetalnessMap":"13841655173"}},"tec9_silentorder":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"92158078338766","NormalMap":"83570187857938","RoughnessMap":"86231193375517","MetalnessMap":"83492568906596"}},"tec9_cottoncloud":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"15998726079","NormalMap":"15998726484","RoughnessMap":"15998726721","MetalnessMap":"15998723939"}},"sks_jacko":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"15177197176","NormalMap":"15177203653","RoughnessMap":"15177204339","MetalnessMap":"15177198090"}},"wrench_hammer_emerald":{"sourcePreviewName":"wrench_hammer_emerald","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15448075670"}},"sks_nevermore":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"114269350268484","NormalMap":"121458973996077","RoughnessMap":"97880276981733","MetalnessMap":"104674393694182"}},"aks_sharkbite":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"11684759812","NormalMap":"11684763552","RoughnessMap":"11684764559","MetalnessMap":"11684761413"}},"wrench_hammer_corrosion":{"sourcePreviewName":"wrench_hammer_corrosion","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039908965"}},"metalbat_serpentine":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","textureID":"15028975758","surfaceAppearance":{"ColorMap":"15028976092","NormalMap":"14984233182","RoughnessMap":"14982860145","MetalnessMap":"14984232525"}},"1911_lunar":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","surfaceAppearance":{"ColorMap":"89241722764611","NormalMap":"134049999227378","RoughnessMap":"115105637809053","MetalnessMap":"86786102233769"}},"ithaca_reserve":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"13841781874","NormalMap":"13565563166","RoughnessMap":"13565564605","MetalnessMap":"13565561573"}},"wrench_hammer_bluegem":{"sourcePreviewName":"wrench_hammer_bluegem","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039886621"}},"aks_mire":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"15177286670","NormalMap":"15177292421","RoughnessMap":"15177292902","MetalnessMap":"15177289295"}},"fireaxe_diesel":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"15014648272","NormalMap":"15014647691","RoughnessMap":"15014647556","MetalnessMap":"15014640798"}},"wrench_hammer_blackpearl":{"sourcePreviewName":"wrench_hammer_blackpearl","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15448169397","NormalMap":"15448168244","RoughnessMap":"15448167489","MetalnessMap":"15448168699"}},"chainsaw_rip":{"meshIds":["14983349557","14983385267","14983386243","14983387157","14983387851","14983389607","14983390935","14983422513","14983424521","14983425394","14983425931"],"available":true,"family":"Chainsaw","kind":"appearance","surfaceAppearance":{"ColorMap":"15177794155","NormalMap":"15177357891","RoughnessMap":"15177358508","MetalnessMap":"15177357345"}},"wrench_contractor":{"meshIds":["8501636555"],"available":true,"family":"Wrench","kind":"appearance","surfaceAppearance":{"ColorMap":"14982816807","NormalMap":"14982826845","RoughnessMap":"14982824116","MetalnessMap":"14982829131"}},"g17_photon":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","surfaceAppearance":{"ColorMap":"139614772944365","NormalMap":"136923303066994","RoughnessMap":"116560298213205","MetalnessMap":"84983506281187"}},"wrench_aerospace":{"meshIds":["8501636555"],"available":true,"family":"Wrench","kind":"appearance","surfaceAppearance":{"ColorMap":"15695484616","NormalMap":"15695484154","RoughnessMap":"15695483770","MetalnessMap":"15695484417"}},"uzi_smiley":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","textureID":"13841671610","surfaceAppearance":{"ColorMap":"13841666943","NormalMap":"13841669834","RoughnessMap":"13715505740","MetalnessMap":"13841669024"}},"ump_honeycomb":{"meshIds":["8604622147","8604623001","8604624774","8604634883"],"available":true,"family":"UMP","kind":"appearance","textureID":"13713093970","surfaceAppearance":{"ColorMap":"13713087658","NormalMap":"13713089856","RoughnessMap":"13713092610","MetalnessMap":"13713088970"}},"uzi_guilded":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","surfaceAppearance":{"ColorMap":"15998740952","NormalMap":"15998741628","RoughnessMap":"15998741927","MetalnessMap":"15998741166"}},"bat_spiffle":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"15445298336","NormalMap":"15445297796","RoughnessMap":"15445297364","MetalnessMap":"15445297485"}},"bayonet_paintsplatter":{"meshIds":["14982950107"],"available":true,"family":"Bayonet","kind":"appearance","surfaceAppearance":{"ColorMap":"15710701266","NormalMap":"15710700578","RoughnessMap":"15710700326","MetalnessMap":"15710700578"}},"bat_neapolitan":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"18335364162","NormalMap":"18335364162","RoughnessMap":"18335364162","MetalnessMap":"18335364162"}},"shovel_oliveworn":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"16688312479","NormalMap":"16688314642","RoughnessMap":"16688314970","MetalnessMap":"16688312841"}},"uzi_crimsonjaw":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","surfaceAppearance":{"ColorMap":"13343335417","NormalMap":"13343337433","RoughnessMap":"13343338573","MetalnessMap":"13343336766"}},"beretta_moss":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","surfaceAppearance":{"ColorMap":"13443011965","NormalMap":"13388061241","RoughnessMap":"13388062020","MetalnessMap":"13388060473"}},"uzi_pumpkinspice":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","surfaceAppearance":{"ColorMap":"15177112812","NormalMap":"15177114799","RoughnessMap":"15177115417","MetalnessMap":"15177114013"}},"mp7_cryogen":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.mp7_cryogen","available":true,"family":"MP7","kind":"variantModel","hidden":true},"bayonet_fangs":{"meshIds":["14982950107"],"available":true,"family":"Bayonet","kind":"appearance","surfaceAppearance":{"ColorMap":"14983836849","NormalMap":"14983839206","RoughnessMap":"14983840008","MetalnessMap":"14983838093"}},"shovel_pinkguard":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"106016605539630","NormalMap":"97849451681354","RoughnessMap":"127391026973802","MetalnessMap":"132650948591488"}},"fireaxe_biotool":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"122222905147597"}},"taiga_icicle":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","surfaceAppearance":{"ColorMap":"15711030418","NormalMap":"15711029890","RoughnessMap":"15711029562","MetalnessMap":"15711030042"}},"taiga_thornslash":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","surfaceAppearance":{"ColorMap":"16355282883","NormalMap":"16355282883","RoughnessMap":"16355282883","MetalnessMap":"16355282883"}},"mare_stallion":{"meshIds":["8350209132","8350209611","8350210610","8350211256"],"available":true,"family":"Mare","kind":"appearance","surfaceAppearance":{"ColorMap":"13556460890","NormalMap":"13556462708","RoughnessMap":"13556463568","MetalnessMap":"13556461661"}},"tommy_mobster":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","surfaceAppearance":{"ColorMap":"13387532472","NormalMap":"13387534350","RoughnessMap":"13387535114","MetalnessMap":"13387533384"}},"mac10_urbandispatch":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"15998654861","NormalMap":"15998654190","RoughnessMap":"15998651198","MetalnessMap":"15998654481"}},"sawnoff_webs":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"15177076142","NormalMap":"15177076142","RoughnessMap":"15177076142","MetalnessMap":"15177076142"}},"tommy_leatherworks":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","surfaceAppearance":{"ColorMap":"13556313114","NormalMap":"13556315610","RoughnessMap":"13556316435","MetalnessMap":"13556314814"}},"machete_zk_blackpearl":{"sourcePreviewName":"machete_zk_blackpearl","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15448244904","NormalMap":"15448244904","RoughnessMap":"15448244904","MetalnessMap":"15448244904"}},"tommy_huntinglodge":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","surfaceAppearance":{"ColorMap":"128285305729440","NormalMap":"99605653492119","RoughnessMap":"90285190631644","MetalnessMap":"92377306654000"}},"tec9_snakeskin":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"13566186022","NormalMap":"13566188527","RoughnessMap":"13566189605","MetalnessMap":"13566187509"}},"aks_radiance":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.aks_radiance","available":true,"family":"AKS","kind":"variantModel","hidden":true},"ithaca_blaze":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"13703922904","NormalMap":"13703924503","RoughnessMap":"13703925013","MetalnessMap":"13703923500"}},"tec9_liberty":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"13935385791","NormalMap":"13935388242","RoughnessMap":"13935389032","MetalnessMap":"13935387111"}},"sks_modern":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"13388175991","NormalMap":"9341965058","RoughnessMap":"9341941167","MetalnessMap":"9341938929"}},"1911_unity":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","surfaceAppearance":{"ColorMap":"18149757669","NormalMap":"18149758744","RoughnessMap":"18149759253","MetalnessMap":"18149757944"}},"m4a1_c_sm":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.m4a1_c_sm","available":true,"family":"M4A1","kind":"variantModel","hidden":true},"wrench_hammer_olivedrift":{"sourcePreviewName":"wrench_hammer_olivedrift","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15070249049"}},"ump_burntumber":{"meshIds":["8604622147","8604623001","8604624774","8604634883"],"available":true,"family":"UMP","kind":"appearance","surfaceAppearance":{"ColorMap":"13842574571","NormalMap":"13841561295","RoughnessMap":"13713092610","MetalnessMap":"13841560451"}},"taiga_scuffed":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","surfaceAppearance":{"ColorMap":"15449269269","NormalMap":"15449262031","RoughnessMap":"15449261083","MetalnessMap":"15449261589"}},"m4a1_patriot":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"13945985275","NormalMap":"13945989865","RoughnessMap":"13945990897","MetalnessMap":"13945986111"}},"taiga_currentcrash":{"meshIds":["14982925911"],"available":true,"family":"Taiga","kind":"appearance","surfaceAppearance":{"ColorMap":"90247337759446"}},"sshorty_steel":{"meshIds":["8369736984","8369737655","8369738413"],"available":true,"family":"Super-Shorty","kind":"appearance","surfaceAppearance":{"ColorMap":"13394161570","NormalMap":"13388284123","RoughnessMap":"13388283285","MetalnessMap":"13388284878"}},"sks_paragon":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"15998710430","NormalMap":"15998710186","RoughnessMap":"15998707527","MetalnessMap":"15998710842"}},"sshorty_gonggi":{"meshIds":["8369736984","8369737655","8369738413"],"available":true,"family":"Super-Shorty","kind":"appearance","surfaceAppearance":{"ColorMap":"77120672555697","NormalMap":"77293230174143","RoughnessMap":"116922430058885","MetalnessMap":"80757991941770"}},"machete_giftededge":{"meshIds":["14984016481"],"available":true,"family":"Machete","kind":"appearance","surfaceAppearance":{"ColorMap":"92544781884877","NormalMap":"90218138687490","RoughnessMap":"106569114335460","MetalnessMap":"100087814791746"}},"beretta_tiger":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"meshOverrides":{"6274428173":{"TextureID":"6274428273"}},"available":true,"family":"Beretta","kind":"appearance","textureID":"13704090301","surfaceAppearance":{"ColorMap":"13704088639","NormalMap":"13387589539","RoughnessMap":"13387590166","MetalnessMap":"13387588930"}},"ithaca_supernatural":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"15183699872","NormalMap":"15183343972","RoughnessMap":"15183332008","MetalnessMap":"15183341850"}},"1911_oldglory":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","surfaceAppearance":{"ColorMap":"13948805827","NormalMap":"13948291596","RoughnessMap":"13948321939","MetalnessMap":"13948290980"}},"sledgehammer_boss":{"meshIds":["15447603217"],"available":true,"family":"Sledgehammer","kind":"appearance","surfaceAppearance":{"ColorMap":"15695402056","NormalMap":"15695400619","RoughnessMap":"15695400018","MetalnessMap":"15695401230"}},"wrench_hammer_damascus":{"sourcePreviewName":"wrench_hammer_damascus","geometryRef":"wrench_hammer","available":true,"family":"Wrench","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039884038","NormalMap":"15039883650","RoughnessMap":"15039869767","MetalnessMap":"15039883793"}},"tec9_diner":{"meshIds":["8389619923","8389620604","8389621240"],"available":true,"family":"TEC-9","kind":"appearance","surfaceAppearance":{"ColorMap":"13712979305","NormalMap":"13703915693","RoughnessMap":"13712990125","MetalnessMap":"13712980107"}},"rpg7_gold":{"meshIds":["8666591037","8666592018"],"available":true,"family":"RPG-7","kind":"appearance","surfaceAppearance":{"ColorMap":"13715204837","NormalMap":"13715207167","RoughnessMap":"13715207920","MetalnessMap":"13715205903"}},"sks_gold":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"16300596462","NormalMap":"16299700340","RoughnessMap":"16299699813","MetalnessMap":"16299699464"},"cosmeticEffects":{"particleTint":{"rgb":[255,170,0],"brightness":15,"lightEmission":1}}},"fnp_pulse":{"meshIds":["9170850029","9170851076","9170851624","9170852119","9170852685","9170853190","9170853588"],"available":true,"family":"FNP","kind":"appearance","surfaceAppearance":{"ColorMap":"16355357614","NormalMap":"16355360494","RoughnessMap":"16355358774","MetalnessMap":"16355357297"}},"g17_warhawk":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","textureID":"10898479150","surfaceAppearance":{"ColorMap":"10898489161","NormalMap":"10898493545","RoughnessMap":"10898494181","MetalnessMap":"10898492739"}},"bat_cricket_damascus":{"sourcePreviewName":"bat_cricket_damascus","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449190167"}},"sks_copper":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","textureID":"13388317796","surfaceAppearance":{"ColorMap":"13394135741","NormalMap":"13388320318","RoughnessMap":"13388321173","MetalnessMap":"13388319734"}},"shovel_xray":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"98683602066650","NormalMap":"93906427804642","RoughnessMap":"117774432477369","MetalnessMap":"131317463645213"}},"shovel_sovereign":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","textureID":"15445272453","surfaceAppearance":{"ColorMap":"15445273144","NormalMap":"15445272825","RoughnessMap":"15445272661","MetalnessMap":"15445272985"}},"shovel_smiley2":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"14984656389","NormalMap":"14983801496","RoughnessMap":"14984658723","MetalnessMap":"14984659961"}},"shovel_sightings":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"15176959990","NormalMap":"15176959990","RoughnessMap":"15176959990","MetalnessMap":"15176959990"}},"shovel_digitaldigger":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"124031928584203","NormalMap":"101223375010206","RoughnessMap":"120693615960684","MetalnessMap":"101851413809122"}},"rambo_cocoa":{"meshIds":["14983928996"],"available":true,"family":"Rambo","kind":"appearance","surfaceAppearance":{"ColorMap":"15449241079","NormalMap":"15449240418","RoughnessMap":"15449240082","MetalnessMap":"15449240082"}},"chainsaw_frostysrevenge":{"meshIds":["14983349557","14983385267","14983386243","14983387157","14983387851","14983389607","14983390935","14983422513","14983424521","14983425394","14983425931"],"available":true,"family":"Chainsaw","kind":"appearance","surfaceAppearance":{"ColorMap":"108135882535629"}},"scarh_gridlines":{"meshIds":["13030911835","13030913085","13030916224","13030918901","13030921643","13030922444"],"available":true,"family":"SCAR-H","kind":"appearance","textureID":"16010528228","surfaceAppearance":{"ColorMap":"16010525894","NormalMap":"16010528537","RoughnessMap":"16010527352","MetalnessMap":"16010526167"}},"sawnoff_tarnishedholly":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"119729701797306","NormalMap":"74358800620679","RoughnessMap":"109090584925400","MetalnessMap":"73344913260731"}},"sawnoff_multicam":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"15998421369","NormalMap":"15998421998","RoughnessMap":"15998422287","MetalnessMap":"15998418989"}},"sawnoff_gold":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"13714456145","NormalMap":"13702871512","RoughnessMap":"13702872174","MetalnessMap":"13702869725"}},"sawnoff_eros":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.sawnoff_eros","available":true,"family":"Sawed-Off","kind":"variantModel","hidden":true},"sawnoff_caution":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"10959371093","NormalMap":"10959372567","MetalnessMap":"10959371833"}},"m4a1_tiles":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"13387870685","NormalMap":"13387874528","RoughnessMap":"13387875337","MetalnessMap":"13387873917"}},"machete_zk_damascus":{"sourcePreviewName":"machete_zk_damascus","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039195887","NormalMap":"15039195419","RoughnessMap":"15039195095","MetalnessMap":"15039195733"}},"mac10_freedom":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"13935272075","NormalMap":"13935274344","RoughnessMap":"13935275139","MetalnessMap":"13935273127"}},"mare_frostecho":{"meshIds":["8350209132","8350209611","8350210610","8350211256"],"available":true,"family":"Mare","kind":"appearance","surfaceAppearance":{"ColorMap":"15695467218","NormalMap":"15695466630","RoughnessMap":"15695465989","MetalnessMap":"15695466899"}},"chainsaw_chromatic":{"meshIds":["14983349557","14983385267","14983386243","14983387157","14983387851","14983389607","14983390935","14983422513","14983424521","14983425394","14983425931"],"available":true,"family":"Chainsaw","kind":"appearance","surfaceAppearance":{"ColorMap":"16688109289","NormalMap":"16688110436","RoughnessMap":"16688110918","MetalnessMap":"16688109691"}},"magnum_inferno":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","multiAppearanceNeedsReview":true,"surfaceAppearance":{"ColorMap":"13565647644","NormalMap":"13565652460","RoughnessMap":"13565654437","MetalnessMap":"13565650923"}},"rambo_scorched":{"meshIds":["14983928996"],"available":true,"family":"Rambo","kind":"appearance","surfaceAppearance":{"ColorMap":"18335129668","NormalMap":"18335129668","RoughnessMap":"18335129668","MetalnessMap":"18335129668"}},"mare_foamshot":{"meshIds":["8350209132","8350209611","8350210610","8350211256"],"available":true,"family":"Mare","kind":"appearance","surfaceAppearance":{"ColorMap":"75041484171385","NormalMap":"89295629740026","RoughnessMap":"126217095624705","MetalnessMap":"115309715991969"}},"katana_hallowsblade":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","surfaceAppearance":{"ColorMap":"15177260870","NormalMap":"15177262361","RoughnessMap":"15008390233","MetalnessMap":"15177261757"}},"beretta_digital":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","surfaceAppearance":{"ColorMap":"9341791793","NormalMap":"9341794310","RoughnessMap":"9341794971","MetalnessMap":"9341793470"}},"shovel_conspiracy":{"meshIds":["14983805568"],"available":true,"family":"Shovel","kind":"appearance","surfaceAppearance":{"ColorMap":"16911044501","NormalMap":"16911046381","RoughnessMap":"16911045496","MetalnessMap":"16911045794"}},"mare_trickshot":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.mare_trickshot","available":true,"family":"Mare","kind":"variantModel","hidden":true,"sourceMeshOverrides":{"16907782525":{"textureID":"16907786775","surfaceAppearance":{"ColorMap":"16907785827","NormalMap":"16907787618","RoughnessMap":"16907788208","MetalnessMap":"16907786165"}},"16907782522":{"textureID":"16907786775","surfaceAppearance":{"ColorMap":"13565676314","NormalMap":"13565680912","RoughnessMap":"13565682376","MetalnessMap":"13565679027"}},"16907782524":{"textureID":"16907786775","surfaceAppearance":{"ColorMap":"16907785827","NormalMap":"16907787618","RoughnessMap":"16907788208","MetalnessMap":"16907786165"}},"16907782591":{"textureID":"16907786775","surfaceAppearance":{"ColorMap":"16907785827","NormalMap":"16907787618","RoughnessMap":"16907788208","MetalnessMap":"16907786165"}},"16907782615":{"textureID":"16907786775","surfaceAppearance":{"ColorMap":"16907785827","NormalMap":"16907787618","RoughnessMap":"16907788208","MetalnessMap":"16907786165"}},"16907782531":{"textureID":"16907786775","surfaceAppearance":{"ColorMap":"16907785827","NormalMap":"16907787618","RoughnessMap":"16907788208","MetalnessMap":"16907786165"}}}},"rambo_bowie_olivedrift":{"sourcePreviewName":"rambo_bowie_olivedrift","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16258877836","NormalMap":"16258878231","RoughnessMap":"16258878797","MetalnessMap":"16258878519"}},"bat_cashcane":{"sourcePreviewName":"bat_cashcane","geometryRef":"bat_cashcane","available":true,"family":"Bat","kind":"modelSwap","sharedGeometryAppearance":{"TextureID":"16299762278","Material":"Plastic","SurfaceAppearance":{"ColorMap":"16300595972","NormalMap":"16299761577","RoughnessMap":"16300595459","MetalnessMap":"16299760247"},"Color":[0.639216,0.635294,0.647059]},"surfaceAppearance":{"ColorMap":"16300595972","NormalMap":"16299761577","RoughnessMap":"16300595459","MetalnessMap":"16299760247"}},"rambo_bowie_forest":{"sourcePreviewName":"rambo_bowie_forest","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16268376292"}},"aks_frostbite":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"86574930426293"}},"rambo_bowie_emerald":{"sourcePreviewName":"rambo_bowie_emerald","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16268308309"}},"mp7_zombified":{"meshIds":["8434174485","8434175515","8434176289","8434177000","8434177639","8434179546"],"available":true,"family":"MP7","kind":"appearance","surfaceAppearance":{"ColorMap":"15334894800","NormalMap":"15334894800","RoughnessMap":"15334894800","MetalnessMap":"15334894800"}},"mp7_olive":{"meshIds":["8434174485","8434175515","8434176289","8434177000","8434177639","8434179546"],"available":true,"family":"MP7","kind":"appearance","surfaceAppearance":{"ColorMap":"13404159306","NormalMap":"13404160425","RoughnessMap":"13404161300","MetalnessMap":"13404142924"}},"mp7_digital":{"meshIds":["8434174485","8434175515","8434176289","8434177000","8434177639","8434179546"],"available":true,"family":"MP7","kind":"appearance","surfaceAppearance":{"ColorMap":"13703244857","NormalMap":"13404160425","RoughnessMap":"13404161300","MetalnessMap":"13404142924"}},"mac10_harvest":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"110907808308032","NormalMap":"132722015663125","RoughnessMap":"132722015663125","MetalnessMap":"77846936981374"}},"katana_voidedge":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","multiAppearanceNeedsReview":true,"surfaceAppearance":{"ColorMap":"15012855048","NormalMap":"15012854439","RoughnessMap":"15012854262","MetalnessMap":"15012854848"}},"m4a1_colonial":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","textureID":"79089334219309","surfaceAppearance":{"ColorMap":"79089334219309","NormalMap":"105172215756802","RoughnessMap":"133060788866644","MetalnessMap":"76424784449915"}},"sawnoff_banana":{"meshIds":["13702857957","13702858666","13702940602","6332444961","6332445788"],"available":true,"family":"Sawed-Off","kind":"appearance","surfaceAppearance":{"ColorMap":"13387455222","NormalMap":"13387461274","RoughnessMap":"13387462843","MetalnessMap":"13387458782"}},"rambo_bowie_vanilla":{"sourcePreviewName":"rambo_bowie_vanilla","geometryRef":"rambo_bowie","available":true,"family":"Rambo","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16268314286","NormalMap":"16268314648","RoughnessMap":"16268314952","MetalnessMap":"16268315630"}},"tommy_plum":{"meshIds":["8586560101","8586562504","8586563934"],"available":true,"family":"Tommy","kind":"appearance","surfaceAppearance":{"ColorMap":"13388349585","NormalMap":"13388350802","RoughnessMap":"13388351567","MetalnessMap":"13388350104"}},"mare_rust":{"meshIds":["8350209132","8350209611","8350210610","8350211256"],"available":true,"family":"Mare","kind":"appearance","surfaceAppearance":{"ColorMap":"16560187868","NormalMap":"8969047074","RoughnessMap":"8969056777","MetalnessMap":"8969034988"}},"rpg7_boom":{"meshIds":["8666591037","8666592018"],"available":true,"family":"RPG-7","kind":"appearance","surfaceAppearance":{"ColorMap":"10959329950","NormalMap":"13388379378","RoughnessMap":"13388380305","MetalnessMap":"13388378532"}},"magnum_rustborne":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"10946557133","NormalMap":"10946582655","RoughnessMap":"10946584119","MetalnessMap":"10946579371"}},"bat_blackjack":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"16687986013","NormalMap":"16687989025","RoughnessMap":"16687987517","MetalnessMap":"16687986464"}},"aks_draco":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"13388090322","NormalMap":"13388091442","RoughnessMap":"13388092218","MetalnessMap":"13388090867"}},"metalbat_northpole":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"15707617354","NormalMap":"15707617660","RoughnessMap":"15707617796","MetalnessMap":"15707617518"}},"magnum_amour":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"16355307379","NormalMap":"16355307807","RoughnessMap":"16355308060","MetalnessMap":"16355307601"}},"magnum_456":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"95811224387068","NormalMap":"116584246128188","RoughnessMap":"135758546385579","MetalnessMap":"75066562664635"}},"machete_zk_vanilla":{"sourcePreviewName":"machete_zk_vanilla","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15028992359","NormalMap":"15028991806","RoughnessMap":"15028991400","MetalnessMap":"15028992043"}},"machete_zk_undead":{"sourcePreviewName":"machete_zk_undead","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039210788","NormalMap":"15039210788","RoughnessMap":"15039210788","MetalnessMap":"15039210788"}},"machete_zk_rustic":{"sourcePreviewName":"machete_zk_rustic","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039186771","NormalMap":"15039186771","RoughnessMap":"15039186771","MetalnessMap":"15039186771"}},"machete_zk_bluegem":{"sourcePreviewName":"machete_zk_bluegem","geometryRef":"machete_zk","available":true,"family":"Machete","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039202907","NormalMap":"15039202907","RoughnessMap":"15039202907","MetalnessMap":"15039202907"}},"machete_wallwriter":{"meshIds":["14984016481"],"available":true,"family":"Machete","kind":"appearance","surfaceAppearance":{"ColorMap":"16688357511","NormalMap":"16688359032","RoughnessMap":"16688359499","MetalnessMap":"16688357868"}},"machete_tix":{"meshIds":["14984016481"],"available":true,"family":"Machete","kind":"appearance","textureID":"15445249285","surfaceAppearance":{"ColorMap":"15445250012","NormalMap":"15445249651","RoughnessMap":"15445249450","MetalnessMap":"15445249794"}},"mac10_sunrise":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"13387823798","NormalMap":"13387827028","RoughnessMap":"13387824789","MetalnessMap":"13387826008"}},"deagle_nacho":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"16942393059","NormalMap":"13935410021","RoughnessMap":"13935410676","MetalnessMap":"13937635046"}},"mac10_lovelycamo":{"meshIds":["8358093050","8358094024","8358094656"],"available":true,"family":"MAC-10","kind":"appearance","surfaceAppearance":{"ColorMap":"16357659168","NormalMap":"16357659168","RoughnessMap":"16357659168","MetalnessMap":"16357659168"}},"rpg7_twotone":{"meshIds":["8666591037","8666592018"],"available":true,"family":"RPG-7","kind":"appearance","textureID":"13388376607","surfaceAppearance":{"ColorMap":"13388377781","NormalMap":"13388379378","RoughnessMap":"13388380305","MetalnessMap":"13388378532"}},"bayonet_hydrographed":{"meshIds":["14982950107"],"available":true,"family":"Bayonet","kind":"appearance","surfaceAppearance":{"ColorMap":"16688338006","NormalMap":"16688340298","RoughnessMap":"16688341008","MetalnessMap":"16688338406"}},"metalbat_battlescarred":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"16688458341","NormalMap":"16688460249","RoughnessMap":"16688460633","MetalnessMap":"16688458782"}},"m4a1_subzero":{"sourcePath":"ReplicatedStorage.Storage.SkinVariants.Guns.m4a1_subzero","available":true,"family":"M4A1","kind":"variantModel","hidden":true},"g17_yosei":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","surfaceAppearance":{"ColorMap":"16040462957","NormalMap":"16040464100","RoughnessMap":"16040464355","MetalnessMap":"16040463384"}},"katana_gold":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","surfaceAppearance":{"ColorMap":"15012855048","NormalMap":"15012854439","RoughnessMap":"15012854262","MetalnessMap":"15012854848"}},"m4a1_frostbite":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"15695451364","NormalMap":"15695450725","RoughnessMap":"15695451590","MetalnessMap":"15695450936"}},"metalbat_candycorn":{"meshIds":["14982863200"],"available":true,"family":"Metal Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"15184161486","NormalMap":"15184164333","RoughnessMap":"15184165386","MetalnessMap":"15184163405"}},"m320_paintball":{"meshIds":["8657659120","8657672869","8657674140","8657674701"],"available":true,"family":"M320","kind":"appearance","textureID":"13842616391","surfaceAppearance":{"ColorMap":"13842613980","NormalMap":"13841618026","RoughnessMap":"13841618889","MetalnessMap":"13841616724"}},"uzi_grape2":{"meshIds":["8417351591","8417353134","8417354151","8417355116"],"available":true,"family":"Uzi","kind":"appearance","surfaceAppearance":{"ColorMap":"16952083915","NormalMap":"13343337433","RoughnessMap":"13343338573","MetalnessMap":"13343336766"}},"fireaxe_tactical_bluegem":{"sourcePreviewName":"fireaxe_tactical_bluegem","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039862065","NormalMap":"15039861559","RoughnessMap":"15039861355","MetalnessMap":"15039861739"}},"katana_yuletide":{"meshIds":["14983759008"],"available":true,"family":"Katana","kind":"appearance","surfaceAppearance":{"ColorMap":"78387945331940"}},"chainsaw_fleshgrinder":{"meshIds":["14983349557","14983385267","14983386243","14983387157","14983387851","14983389607","14983390935","14983422513","14983424521","14983425394","14983425931"],"available":true,"family":"Chainsaw","kind":"appearance","surfaceAppearance":{"ColorMap":"84720894767609"}},"magnum_rust":{"meshIds":["6338511107","8379177333","8379178521","8379179282"],"available":true,"family":"Magnum","kind":"appearance","surfaceAppearance":{"ColorMap":"10946557133","NormalMap":"10946582655","RoughnessMap":"10946584119","MetalnessMap":"10946579371"}},"balisong_vampiric":{"meshIds":["14983718375","14983724475","14983725068","14983725628"],"available":true,"family":"Balisong","kind":"appearance","surfaceAppearance":{"ColorMap":"15177238158","NormalMap":"15177238158","RoughnessMap":"15177238158","MetalnessMap":"15177238158"}},"fireaxe_tactical_kintsugi":{"sourcePreviewName":"fireaxe_tactical_kintsugi","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039866167","NormalMap":"15039866167","RoughnessMap":"15039866167","MetalnessMap":"15039866167"}},"fal_wintermaroon":{"meshIds":["8686470141","8686472580","8686476113","8686477616"],"available":true,"family":"FN-FAL","kind":"appearance","surfaceAppearance":{"ColorMap":"15710689399","NormalMap":"15710688727","RoughnessMap":"15710688462","MetalnessMap":"15710688958"}},"m4a1_meltdown":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"138263153339452","NormalMap":"92873024476028","RoughnessMap":"77602151073625","MetalnessMap":"122701374554312"}},"deagle_acrylic":{"meshIds":["8373221756","8373277699","8373279536","8373280856"],"available":true,"family":"Deagle","kind":"appearance","surfaceAppearance":{"ColorMap":"13714048705","NormalMap":"13567912487","RoughnessMap":"13567913639","MetalnessMap":"13567909944"}},"g17_sage":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","textureID":"10898774042","surfaceAppearance":{"ColorMap":"10898771076","NormalMap":"10898799572","RoughnessMap":"10898801144","MetalnessMap":"10898797751"}},"g17_night":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","textureID":"10899181873","surfaceAppearance":{"ColorMap":"10899178487","NormalMap":"10899190543","RoughnessMap":"10899191886","MetalnessMap":"10899187519"}},"g17_digital_green":{"meshIds":["6274428173","9414872498","9414873706","9414874537","9414875942","9414880423","9414883937"],"available":true,"family":"G17","kind":"appearance","surfaceAppearance":{"ColorMap":"9422494421","NormalMap":"9422513602","RoughnessMap":"9422512530","MetalnessMap":"9422514126"}},"1911_darkheart":{"meshIds":["8969972509","8969974903","8969980449","8969981592"],"available":true,"family":"1911","kind":"appearance","surfaceAppearance":{"ColorMap":"13564716720","NormalMap":"13564718375","RoughnessMap":"13564719235","MetalnessMap":"13564717513"}},"fnp_bloodshot":{"meshIds":["9170850029","9170851076","9170851624","9170852119","9170852685","9170853190","9170853588"],"available":true,"family":"FNP","kind":"appearance","textureID":"13566144332","surfaceAppearance":{"ColorMap":"13566118019","NormalMap":"13566120150","RoughnessMap":"13566128289","MetalnessMap":"13566119175"}},"aks_cherish":{"meshIds":["13703998357","8373294267","8373296137","8373297178","8373301410"],"available":true,"family":"AKS","kind":"appearance","surfaceAppearance":{"ColorMap":"16355374224","NormalMap":"16355375244","RoughnessMap":"16355375483","MetalnessMap":"16355374709"}},"fireaxe_tactical_vanilla":{"sourcePreviewName":"fireaxe_tactical_vanilla","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"14984254454","NormalMap":"14984254454","RoughnessMap":"14984254454","MetalnessMap":"14984254454"}},"ithaca_homedefense":{"meshIds":["8359601953","8359602375"],"available":true,"family":"Ithaca","kind":"appearance","surfaceAppearance":{"ColorMap":"13935302367","NormalMap":"13935306192","RoughnessMap":"13935303200","MetalnessMap":"13935310687"}},"bat_cricket_vanilla":{"sourcePreviewName":"bat_cricket_vanilla","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449203020"}},"bat_cricket_emerald":{"sourcePreviewName":"bat_cricket_emerald","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449096192"}},"fal_merlot":{"meshIds":["8686470141","8686472580","8686476113","8686477616"],"available":true,"family":"FN-FAL","kind":"appearance","textureID":"13566086660","surfaceAppearance":{"ColorMap":"13566072355","NormalMap":"13566075780","RoughnessMap":"13566082947","MetalnessMap":"13566073596"}},"beretta_fadedorchid":{"meshIds":["6274428173","8311208397","8311209510","8311210731","8311211346"],"available":true,"family":"Beretta","kind":"appearance","surfaceAppearance":{"ColorMap":"129085891817339","NormalMap":"116193426612544","RoughnessMap":"85371688251244","MetalnessMap":"86142070667725"}},"fireaxe_oak":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"14983464641","NormalMap":"14983466362","RoughnessMap":"14983471746"}},"fireaxe_jaws":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"15450299160","NormalMap":"15450298715","RoughnessMap":"15450298061","MetalnessMap":"15450298915"}},"fal_majesty":{"meshIds":["8686470141","8686472580","8686476113","8686477616"],"available":true,"family":"FN-FAL","kind":"appearance","surfaceAppearance":{"ColorMap":"12268008265","NormalMap":"12267979962","RoughnessMap":"12267980974","MetalnessMap":"12267979022"}},"fireaxe_fireaxe":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"333816720","NormalMap":"333816720","RoughnessMap":"333816720","MetalnessMap":"333816720"}},"ump_daejang":{"meshIds":["8604622147","8604623001","8604624774","8604634883"],"available":true,"family":"UMP","kind":"appearance","surfaceAppearance":{"ColorMap":"125942364208210","NormalMap":"80254908603579","RoughnessMap":"112502290266633","MetalnessMap":"98525310658486"}},"fireaxe_07gift":{"meshIds":["14983469029"],"available":true,"family":"Fire Axe","kind":"appearance","surfaceAppearance":{"ColorMap":"15695429682","NormalMap":"15695429360","RoughnessMap":"15695428821","MetalnessMap":"15695429036"}},"golfclub_orangeshift":{"meshIds":["14983546684"],"available":true,"family":"Golf Club","kind":"appearance","surfaceAppearance":{"ColorMap":"14983545106","NormalMap":"14983550867","RoughnessMap":"14983551891","MetalnessMap":"14983549891"}},"baton_magicwand":{"meshIds":["15449361446","15449361723","15449362005"],"available":true,"family":"Baton","kind":"appearance","textureID":"15447733301","surfaceAppearance":{"ColorMap":"15447728720","NormalMap":"15447729066","RoughnessMap":"15447729349","MetalnessMap":"15447718358"}},"fireaxe_tactical_damascus":{"sourcePreviewName":"fireaxe_tactical_damascus","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15039856734","NormalMap":"15039856120","RoughnessMap":"15039855919","MetalnessMap":"15039856279"}},"chainsaw_tealcoat":{"meshIds":["14983349557","14983385267","14983386243","14983387157","14983387851","14983389607","14983390935","14983422513","14983424521","14983425394","14983425931"],"available":true,"family":"Chainsaw","kind":"appearance","surfaceAppearance":{"ColorMap":"14983069682","NormalMap":"14983374970","RoughnessMap":"14983376126","MetalnessMap":"14983373535"}},"chainsaw_runic":{"meshIds":["14983349557","14983385267","14983386243","14983387157","14983387851","14983389607","14983390935","14983422513","14983424521","14983425394","14983425931"],"available":true,"family":"Chainsaw","kind":"appearance","surfaceAppearance":{"ColorMap":"124391413731378","NormalMap":"80321921079422","RoughnessMap":"129961044112883","MetalnessMap":"124391413731378"}},"fal_purpleheart":{"meshIds":["8686470141","8686472580","8686476113","8686477616"],"available":true,"family":"FN-FAL","kind":"appearance","surfaceAppearance":{"ColorMap":"16040566002","NormalMap":"16040567222","RoughnessMap":"16040566280","MetalnessMap":"16040565623"}},"bat_testtube":{"meshIds":["14983650592"],"available":true,"family":"Bat","kind":"appearance","surfaceAppearance":{"ColorMap":"87169085944045","NormalMap":"71110875253041","RoughnessMap":"130424019768221","MetalnessMap":"79233128855174"}},"m4a1_aureus":{"meshIds":["7193104144","8622485949","8622487555","8622488370","8622489339","8622491702","8622492611","8622493728"],"available":true,"family":"M4A1","kind":"appearance","surfaceAppearance":{"ColorMap":"13714578814","NormalMap":"13714331534","RoughnessMap":"13714329843","MetalnessMap":"13714330861"}},"fireaxe_tactical_emerald":{"sourcePreviewName":"fireaxe_tactical_emerald","geometryRef":"fireaxe_tactical","available":true,"family":"Fire Axe","kind":"modelSwap","surfaceAppearance":{"ColorMap":"16303084165","NormalMap":"15448203199","RoughnessMap":"15448201188","MetalnessMap":"15448201759"}},"bat_cricket_olivedrift":{"sourcePreviewName":"bat_cricket_olivedrift","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449137460"}},"sks_fatalcontest":{"meshIds":["9276258448","9276260237","9276261078","9276261670"],"available":true,"family":"SKS","kind":"appearance","surfaceAppearance":{"ColorMap":"79663004296755","NormalMap":"87271140970579","RoughnessMap":"110938399231442","MetalnessMap":"138492849176400"}},"bat_cricket_bluegem":{"sourcePreviewName":"bat_cricket_bluegem","geometryRef":"bat_cricket","available":true,"family":"Bat","kind":"modelSwap","surfaceAppearance":{"ColorMap":"15449171966"}}},"families":{"Rambo":{"meshIds":["14983928996"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Rambo"],"holsteredFallback":[],"excludedMeshIds":[]},"Magnum":{"meshIds":["8379179282","8379178521","8379177333","6338511107","7193327827"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Magnum"],"holsteredFallback":{"7193327827":"6338511107"},"excludedMeshIds":["7193338088"]},"UMP":{"meshIds":["8604622147","8604634883","8604624774","8604623001"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["UMP-45"],"holsteredFallback":[],"excludedMeshIds":[]},"SCAR-H":{"meshIds":["13030918901","13030922444","13030921643","13030916224","13030913085","13030911835"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["SCAR-H-1"],"holsteredFallback":[],"excludedMeshIds":["6381115369","6381116180"]},"TEC-9":{"meshIds":["8389619923","8389620604","8389621240"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["TEC-9"],"holsteredFallback":[],"excludedMeshIds":["6274428173","6381115369","6381116180"]},"M320":{"meshIds":["8657672869","8657674701","8657674140","8657659120"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["M320-1"],"holsteredFallback":[],"excludedMeshIds":["8657661705"]},"G17":{"meshIds":["9414873706","9414875942","9414880423","9414872498","9414883937","9414874537","6274428173","8302676520","8302678913","8302677638"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["G-17"],"holsteredFallback":{"8302678913":"9414872498","8302676520":"9414873706","8302677638":"9414874537"},"excludedMeshIds":[]},"MAC-10":{"meshIds":["8358094024","8358094656","8358093050"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["MAC-10"],"holsteredFallback":[],"excludedMeshIds":["6274428173"]},"Sledgehammer":{"meshIds":["15447603217"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Sledgehammer"],"holsteredFallback":[],"excludedMeshIds":[]},"RPG-7":{"meshIds":["8666591037","8666592018"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["RPG-7"],"holsteredFallback":[],"excludedMeshIds":[]},"Beretta":{"meshIds":["8311210731","8311211346","8311208397","8311209510","6274428173"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Beretta"],"holsteredFallback":[],"excludedMeshIds":[]},"Taiga":{"meshIds":["14982925911"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Taiga"],"holsteredFallback":[],"excludedMeshIds":[]},"SKS":{"meshIds":["9276258448","9276261670","9276261078","9276260237"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["SKS"],"holsteredFallback":[],"excludedMeshIds":["9276259427"]},"MP7":{"meshIds":["8434177639","8434179546","8434175515","8434174485","8434176289","8434177000"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["MP7"],"holsteredFallback":[],"excludedMeshIds":[]},"Balisong":{"meshIds":["14983725068","14983724475","14983718375","14983725628"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Balisong"],"holsteredFallback":[],"excludedMeshIds":[]},"Fire Axe":{"meshIds":["14983469029"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Fire Axe","FireAxe"],"holsteredFallback":[],"excludedMeshIds":[]},"Wrench":{"meshIds":["8501636555"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Wrench"],"holsteredFallback":[],"excludedMeshIds":[]},"Shovel":{"meshIds":["14983805568"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Shovel"],"holsteredFallback":[],"excludedMeshIds":[]},"FNP":{"meshIds":["9170853190","9170853588","9170852119","9170851076","9170852685","9170850029","9170851624"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["FNP-45"],"holsteredFallback":[],"excludedMeshIds":["8004616668","8969983515"]},"Baton":{"meshIds":["15449361723","15449362005","15449361446"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["BBaton"],"holsteredFallback":[],"excludedMeshIds":[]},"Bat":{"meshIds":["14983650592"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Bat"],"holsteredFallback":[],"excludedMeshIds":[]},"Mare":{"meshIds":["8350209611","8350210610","8350211256","8350209132"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Mare"],"holsteredFallback":[],"excludedMeshIds":["7988168771"]},"Chainsaw":{"meshIds":["14983425394","14983389607","14983387851","14983425931","14983422513","14983390935","14983424521","14983387157","14983385267","14983349557","14983386243"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Chainsaw"],"holsteredFallback":[],"excludedMeshIds":["14983384566"]},"Crowbar":{"meshIds":["8999004640"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Crowbar"],"holsteredFallback":[],"excludedMeshIds":[]},"M4A1":{"meshIds":["7193104144","8622491702","8622493728","8622488370","8622485949","8622489339","8622487555","8622492611"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["M4A1-1"],"holsteredFallback":[],"excludedMeshIds":["6381115369","6381116180"]},"Sawed-Off":{"meshIds":["6332445788","6332444961","13702857957","13702940602","13702858666"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Sawn-Off"],"holsteredFallback":[],"excludedMeshIds":[]},"FN-FAL":{"meshIds":["8686477616","8686476113","8686472580","8686470141"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["FN-FAL"],"holsteredFallback":[],"excludedMeshIds":["6381115369","6381116180"]},"Deagle":{"meshIds":["8373280856","8373221756","8373279536","8373277699"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Deagle"],"holsteredFallback":[],"excludedMeshIds":["8969983515"]},"Scout":{"meshIds":["9778535074","9778540980","9778540201","9778539357","9778538440","9778537695","9778536281"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Scout"],"holsteredFallback":[],"excludedMeshIds":[]},"1911":{"meshIds":["8969974903","8969972509","8969980449","8969981592"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["M1911"],"holsteredFallback":[],"excludedMeshIds":["8969983515"]},"Katana":{"meshIds":["14983759008","8501367185"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Katana"],"holsteredFallback":[],"excludedMeshIds":[]},"Golf Club":{"meshIds":["14983546684"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Golf Club","GolfClub"],"holsteredFallback":[],"excludedMeshIds":[]},"Bayonet":{"meshIds":["14982950107"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Bayonet"],"holsteredFallback":[],"excludedMeshIds":[]},"Uzi":{"meshIds":["8417355116","8417351591","8417354151","8417353134","11797608211","11797619234"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Uzi"],"holsteredFallback":[{"sourceRole":"BasePart","liveMeshId":"11797608211"},{"sourceRole":"SightsPart","liveMeshId":"11797619234"}],"excludedMeshIds":[]},"Machete":{"meshIds":["14984016481"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Machete"],"holsteredFallback":[],"excludedMeshIds":[]},"Super-Shorty":{"meshIds":["8369736984","8369738413","8369737655","7193503851"],"category":"gun","runtimeAuxiliary":[{"meshId":"7193503851","inheritFrom":"Base","role":"Shellport"}],"runtimeNames":["Super-Shorty"],"holsteredFallback":[],"excludedMeshIds":["6332444961"]},"Ithaca":{"meshIds":["8359602375","8359601953"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Ithaca-37"],"holsteredFallback":[],"excludedMeshIds":["6332444961"]},"Metal Bat":{"meshIds":["14982863200"],"category":"melee","runtimeAuxiliary":[],"runtimeNames":["Metal Bat","MetalBat"],"holsteredFallback":[],"excludedMeshIds":[]},"Tommy":{"meshIds":["8586560101","8586562504","8586563934"],"category":"gun","runtimeAuxiliary":[],"runtimeNames":["Tommy"],"holsteredFallback":[],"excludedMeshIds":[]},"G18":{"meshIds":["9414873706","9414875942","9414880423","9414872498","9414883937","9414874537","6274428173","8302676520","8302678913","8302677638"],"runtimeAuxiliary":[],"category":"gun","skinSourceFamily":"G17","runtimeNames":["G-18"],"holsteredFallback":{"8302678913":"9414872498","8302676520":"9414873706","8302677638":"9414874537"},"excludedMeshIds":["13410216953"]},"AKS":{"meshIds":["8373301410","8373297178","13703998357","8373294267","8373296137","13703999469"],"category":"gun","runtimeAuxiliary":[{"defaultTransparency":1,"meshId":"13703999469","role":"BasePart2","inheritFromMeshId":"8373294267"}],"runtimeNames":["AKS-74U"],"holsteredFallback":[],"excludedMeshIds":["6381115369","6381116180"]}},"schemaVersion":"1.0.0","stage":"github-runtime-candidate"}
+-- Universal cosmetic skin changer, GitHub DB loader, core v0.4.4 (mixed-Part variant fix).
+-- Fetches skins.json from the matching SkinDB repository.
+-- Optional override: getgenv().SKIN_DB_URL = "https://raw.githubusercontent.com/.../skins.json"
+-- Does not execute CustomApply, ClientConfig or ServerConfig.
+
+local G = getgenv()
+local DB_URL = G.SKIN_DB_URL or "https://raw.githubusercontent.com/DrainGangUzi/SkinDB/main/skins.json"
+local Players = game:GetService("Players")
+local RS = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+local HttpService = game:GetService("HttpService")
+local player = Players.LocalPlayer
+
+local ok, db = pcall(function()
+    local raw = game:HttpGet(DB_URL)
+    return HttpService:JSONDecode(raw)
+end)
+if not ok or type(db) ~= "table" or type(db.families) ~= "table" or type(db.skins) ~= "table" then
+    warn("[SkinChanger] Could not download/parse " .. DB_URL .. ":", tostring(db))
+    return
+end
+if db.schemaVersion ~= "1.0.0" then
+    warn("[SkinChanger] Unexpected DB schema version:", tostring(db.schemaVersion))
+    return
+end
+
+-- Stop old installers only after the new DB has loaded successfully.
+if G.__M4DBTest then pcall(function() G.__M4DBTest:disable() end) end
+if G.__M4AppearanceEngine then pcall(function() G.__M4AppearanceEngine:disable() end) end
+if G.__GoldFXTest then
+    pcall(function() G.__GoldFXTest:stop() end)
+    G.__GoldFXTest = nil
+end
+if G.SkinChanger then pcall(function() G.SkinChanger:disable() end) end
+
+local KEY_MAPS = {"ColorMap", "NormalMap", "RoughnessMap", "MetalnessMap"}
+local function ident(value)
+    local t = tostring(value or "")
+    return t:match("(%d+)%D*$") or ""
+end
+local function asset(value)
+    if not value or value == "" then return "" end
+    return "rbxassetid://" .. tostring(value)
+end
+local function normal(value)
+    return tostring(value or ""):lower():gsub("[^%da-z]", "")
+end
+local function ownContextPart(part)
+    return part and part:IsA("MeshPart") and not part:FindFirstAncestor("__SkinChangerOverlay")
+end
+local function charsRoot()
+    local chars = workspace:FindFirstChild("Characters")
+    return chars and chars:FindFirstChild(player.Name)
+end
+local function anchorFor(root)
+    if not root then return nil end
+    for _, name in ipairs({"WeaponHandle", "Handle", "Base", "Main", "Default", "HandlePart"}) do
+        local o = root:FindFirstChild(name, true)
+        if o and o:IsA("BasePart") then return o end
+    end
+    if root:IsA("BasePart") then return root end
+    return root:FindFirstChildWhichIsA("BasePart", true)
+end
+local function countFamilyMeshes(root, family)
+    local ids = family.meshIds or {}
+    local lookup = {}
+    for _, v in ipairs(ids) do lookup[tostring(v)] = true end
+    local n = 0
+    for _, obj in ipairs(root:GetDescendants()) do
+        if ownContextPart(obj) and lookup[ident(obj.MeshId)] then
+            n += 1
+            if n >= 2 then break end
+        end
+    end
+    return n
+end
+local function matchesRoot(root, family)
+    if not root or not family then return false end
+    for _, name in ipairs(family.runtimeNames or {}) do
+        if normal(root.Name) == normal(name) then return true end
+    end
+    -- This fallback identifies a differently named equipped Tool from known body meshes.
+    -- Require two matches for multi-piece firearms to avoid a shared bullet false positive.
+    local ids = family.meshIds or {}
+    if #ids == 0 then return false end
+    local count = countFamilyMeshes(root, family)
+    return count >= math.min(#ids, 2)
+end
+local function findRoots(family)
+    local ch = charsRoot()
+    if not ch then return {} end
+    local roots = {}
+    for _, obj in ipairs(ch:GetChildren()) do
+        if obj.Name ~= "DisplayItems" and (obj:IsA("Model") or obj:IsA("Tool"))
+            and matchesRoot(obj, family) then
+            roots.equipped = obj
+            break
+        end
+    end
+    local display = ch:FindFirstChild("DisplayItems")
+    if display then
+        local models = {}
+        for _, obj in ipairs(display:GetDescendants()) do
+            if obj:IsA("Model") or obj:IsA("Tool") then models[#models + 1] = obj end
+        end
+        -- Prefer exact runtime names before mesh fallback. Otherwise a broad
+        -- holster-container Model could accidentally include unrelated weapons.
+        for _, obj in ipairs(models) do
+            for _, name in ipairs(family.runtimeNames or {}) do
+                if normal(obj.Name) == normal(name) then
+                    roots.holstered = obj
+                    break
+                end
+            end
+            if roots.holstered then break end
+        end
+        if not roots.holstered then
+            for i = #models, 1, -1 do
+                if matchesRoot(models[i], family) then
+                    roots.holstered = models[i]
+                    break
+                end
+            end
+        end
+    end
+    if roots.equipped then
+        local cam = workspace.CurrentCamera
+        local vm = cam and cam:FindFirstChild("ViewModel")
+        local vmTool = vm and vm:FindFirstChild("Tool")
+        if vmTool and matchesRoot(vmTool, family) then
+            roots.firstPerson = vmTool
+        elseif vmTool and #family.meshIds > 0 and countFamilyMeshes(vmTool, family) >= 1 then
+            roots.firstPerson = vmTool
+        end
+    end
+    return roots
+end
+
+local engine = {
+    running = true,
+    database = db,
+    selections = {},  -- family -> skin ID; G18 can independently select a G17 skin
+    baseline = setmetatable({}, {__mode = "k"}),
+    overlays = {},    -- family -> context -> {root, skinId, holder, sourceKey}
+    hidden = {},      -- family -> part -> original LocalTransparencyModifier
+    lastStatus = {},
+    warned = {},
+    fxOriginals = setmetatable({}, {__mode = "k"}), -- emitter -> original cosmetic properties
+    hideStepName = "SkinChangerCosmeticHide_" .. tostring(player.UserId),
+    hideStepConnected = false,
+    renderConnection = nil,
+}
+local function warnOnce(key, ...)
+    if engine.warned[key] then return end
+    engine.warned[key] = true
+    warn(...)
+end
+
+function engine:remember(part)
+    if self.baseline[part] then return end
+    local sa = part:FindFirstChildOfClass("SurfaceAppearance")
+    self.baseline[part] = {
+        texture = part.TextureID,
+        color = part.Color,
+        material = part.Material,
+        reflectance = part.Reflectance,
+        sa = sa and sa:Clone() or false,
+        transparency = part.LocalTransparencyModifier,
+    }
+end
+function engine:applySurface(part, wanted, remove)
+    local current = part:FindFirstChildOfClass("SurfaceAppearance")
+    if remove then
+        if current then current:Destroy() end
+        return
+    end
+    if not wanted then return end
+    if not current then
+        current = Instance.new("SurfaceAppearance")
+        current.Parent = part
+    end
+    for _, key in ipairs(KEY_MAPS) do
+        local id = wanted[key]
+        if id then
+            if ident(current[key]) ~= ident(id) then
+                current[key] = asset(id)
+            end
+        else
+            -- Partial PBR record: a LIVE mesh must not inherit missing
+            -- map fields from the previously selected skin.
+            -- For exact cosmetic clones, preserve the source's own maps.
+            local original = self.baseline[part]
+            if original then
+                local baselineMap = original.sa and original.sa[key] or ""
+                if current[key] ~= baselineMap then
+                    current[key] = baselineMap
+                end
+            end
+        end
+    end
+end
+
+function engine:applyAppearance(part, record, isClone)
+    if not isClone then self:remember(part) end
+    local override = record.meshOverrides and record.meshOverrides[ident(part.MeshId)]
+    local wantedTexture = (override and override.TextureID) or record.textureID
+    if wantedTexture then
+        if ident(part.TextureID) ~= ident(wantedTexture) then
+            part.TextureID = asset(wantedTexture)
+        end
+    else
+        -- The new PBR-only skin has no known base texture. Restore the
+        -- original baseline instead of leaving the previous skin's TextureID.
+        local original = self.baseline[part]
+        if original and part.TextureID ~= original.texture then
+            part.TextureID = original.texture
+        end
+    end
+    -- Do NOT mutate MeshId, Size, CFrame, SpecialMesh.Scale, or physical state.
+    self:applySurface(part, record.surfaceAppearance, record.removeSurfaceAppearance)
+end
+
+function engine:restorePart(part)
+    local old = self.baseline[part]
+    if not old or not part.Parent then return end
+    pcall(function()
+        part.TextureID = old.texture
+        part.Color = old.color
+        part.Material = old.material
+        part.Reflectance = old.reflectance
+        part.LocalTransparencyModifier = old.transparency
+        local current = part:FindFirstChildOfClass("SurfaceAppearance")
+        if current then current:Destroy() end
+        if old.sa then old.sa:Clone().Parent = part end
+    end)
+end
+function engine:restoreFamilyAppearance(familyName)
+    local family = db.families[familyName]
+    if not family then return end
+    local ids = {}
+    for _, mesh in ipairs(family.meshIds or {}) do ids[tostring(mesh)] = true end
+    for part, _ in pairs(self.baseline) do
+        if part.Parent and ids[ident(part.MeshId)] then self:restorePart(part) end
+    end
+end
+function engine:clearOverlays(familyName)
+    local overlays = self.overlays[familyName]
+    if overlays then
+        for _, entry in pairs(overlays) do
+            if entry.holder and entry.holder.Parent then entry.holder:Destroy() end
+        end
+    end
+    self.overlays[familyName] = nil
+    local hidden = self.hidden[familyName]
+    if hidden then
+        for part, old in pairs(hidden) do
+            if part.Parent then pcall(function() part.LocalTransparencyModifier = old end) end
+        end
+    end
+    self.hidden[familyName] = nil
+end
+local function sourcePreview(name)
+    local playerGui = player:FindFirstChild("PlayerGui")
+    if not playerGui then return nil end
+    for _, obj in ipairs(playerGui:GetDescendants()) do
+        if obj.Name == name and (obj:IsA("Model") or obj:IsA("Folder") or obj:IsA("Frame")) then
+            local found = obj:FindFirstChildWhichIsA("MeshPart", true)
+            if found then return obj end
+        end
+    end
+    return nil
+end
+local function sourceVariant(path)
+    if type(path) ~= "string" or not path:match("^ReplicatedStorage%.") then return nil end
+    local node = RS
+    for component in path:gmatch("[^%.]+") do
+        if component ~= "ReplicatedStorage" then
+            node = node:FindFirstChild(component)
+            if not node then return nil end
+        end
+    end
+    if node:IsA("Model") then return node end
+    return nil
+end
+local function cleanCosmetic(root)
+    -- Never permit modules/scripts or source welds to execute/attach gameplay.
+    for _, obj in ipairs(root:GetDescendants()) do
+        if obj:IsA("LuaSourceContainer") or obj:IsA("JointInstance") or obj:IsA("WeldConstraint") then
+            obj:Destroy()
+        end
+    end
+    local visualParts = root:GetDescendants()
+    if root:IsA("BasePart") then table.insert(visualParts, root) end
+    for _, obj in ipairs(visualParts) do
+        if obj:IsA("BasePart") then
+            obj.Anchored = false
+            obj.CanCollide = false
+            obj.CanTouch = false
+            obj.CanQuery = false
+            obj.Massless = true
+        end
+    end
+end
+local function cosmeticsHolder(root)
+    local holder = Instance.new("Model")
+    holder.Name = "__SkinChangerOverlay"
+    return holder
+end
+local function placeAndWeld(part, liveAnchor, rel)
+    part.CFrame = liveAnchor.CFrame * rel
+    local weld = Instance.new("WeldConstraint")
+    weld.Name = "__SkinChangerCosmeticWeld"
+    weld.Part0 = liveAnchor
+    weld.Part1 = part
+    weld.Parent = part
+end
+function engine:buildVariant(root, record)
+    local src = sourceVariant(record.sourcePath)
+    local liveAnchor = anchorFor(root)
+    if not src or not liveAnchor then return nil, "missing source model or live anchor" end
+    local srcAnchor = anchorFor(src)
+    if not srcAnchor then return nil, "missing source anchor" end
+    local sourceParts = {}
+    for _, obj in ipairs(src:GetDescendants()) do
+        if obj:IsA("BasePart") then sourceParts[#sourceParts+1] = obj end
+    end
+    if #sourceParts == 0 then return nil, "source has no parts" end
+    -- Clone while unparented; strip source scripts/joints before adding to Workspace.
+    local holder = cosmeticsHolder(root)
+    local replica = src:Clone()
+    replica.Parent = holder
+    cleanCosmetic(replica)
+    local copiedParts = {}
+    for _, obj in ipairs(replica:GetDescendants()) do
+        if obj:IsA("BasePart") then copiedParts[#copiedParts+1] = obj end
+    end
+    if #copiedParts ~= #sourceParts then holder:Destroy() return nil, "source/clone parts differ" end
+    for i, clonePart in ipairs(copiedParts) do
+        local original = sourceParts[i]
+        local overrides = record.sourceMeshOverrides
+        -- Models may contain ordinary Parts (e.g. mare_trickshot.Handle).
+        -- Only MeshParts expose MeshId; keep non-mesh anchors for placement,
+        -- but never try to look up their mesh-specific appearance overrides.
+        local perMesh = nil
+        if original:IsA("MeshPart") and clonePart:IsA("MeshPart") and overrides then
+            perMesh = overrides[ident(original.MeshId)]
+        end
+        if perMesh and clonePart:IsA("MeshPart") then
+            if perMesh.textureID and ident(clonePart.TextureID) ~= ident(perMesh.textureID) then
+                clonePart.TextureID = asset(perMesh.textureID)
+            end
+            self:applySurface(clonePart, perMesh.surfaceAppearance, false)
+        elseif record.missingSurfaceFallback and clonePart:IsA("MeshPart")
+            and not clonePart:FindFirstChildOfClass("SurfaceAppearance") then
+            self:applySurface(clonePart, record.missingSurfaceFallback, false)
+        end
+        placeAndWeld(clonePart, liveAnchor, srcAnchor.CFrame:ToObjectSpace(original.CFrame))
+    end
+    holder.Parent = root
+    return holder
+end
+function engine:buildModelSwap(root, record)
+    local geom = db.modelSwapGeometry[record.geometryRef]
+    if not geom then return nil, "missing geometry record" end
+    local preview = sourcePreview(record.sourcePreviewName)
+    local liveAnchor = anchorFor(root)
+    if not preview or not liveAnchor then return nil, "missing preview geometry or live anchor" end
+    local holder = cosmeticsHolder(root)
+    for _, partRecord in ipairs(geom.parts or {}) do
+        local wantedMesh = ident(partRecord.MeshId)
+        local sourcePart
+        for _, obj in ipairs(preview:GetDescendants()) do
+            if obj:IsA("MeshPart") and ident(obj.MeshId) == wantedMesh then
+                sourcePart = obj
+                break
+            end
+        end
+        if not sourcePart then
+            holder:Destroy()
+            return nil, "missing imported preview MeshPart " .. wantedMesh
+        end
+        local cosmetic = sourcePart:Clone()
+        cleanCosmetic(cosmetic)
+        -- The exact imported mesh is cloned; no MeshId+Size reconstruction.
+        cosmetic.Parent = holder
+        if record.surfaceAppearance then self:applySurface(cosmetic, record.surfaceAppearance, false) end
+        local rel = partRecord.relativeCFrame
+        if not rel or #rel ~= 12 then
+            holder:Destroy()
+            return nil, "invalid relative transform"
+        end
+        placeAndWeld(cosmetic, liveAnchor, CFrame.new(table.unpack(rel)))
+    end
+    holder.Parent = root
+    return holder
+end
+-- Record original LTM once, and never hide a cosmetic overlay as if it were the source.
+-- `holder == nil` is intentional for a persistent holstered original while the
+-- equipped cosmetic replaces it; the old holstered clone is destroyed separately.
+function engine:hideOriginal(familyName, root, holder)
+    if not root then return end
+    self.hidden[familyName] = self.hidden[familyName] or setmetatable({}, {__mode = "k"})
+    local tracked = self.hidden[familyName]
+    for _, part in ipairs(root:GetDescendants()) do
+        if part:IsA("MeshPart") and not part:FindFirstAncestor("__SkinChangerOverlay")
+            and (not holder or not part:IsDescendantOf(holder)) then
+            if tracked[part] == nil then tracked[part] = part.LocalTransparencyModifier end
+            part.LocalTransparencyModifier = 1
+        end
+    end
+end
+
+-- Camera/weapon scripts can overwrite LocalTransparencyModifier every frame.
+-- A 0.35-second polling loop alone permits a brief flash of the old skin.
+-- Force existing tracked originals invisible late in the local render frame;
+-- no geometry, gameplay or replicated Transparency property is changed here.
+function engine:enforceHidden()
+    if not self.running then return end
+    for familyName, tracked in pairs(self.hidden) do
+        local skinId = self.selections[familyName]
+        local record = skinId and db.skins[skinId]
+        if record and (record.kind == "variantModel" or record.kind == "modelSwap") then
+            for part in pairs(tracked) do
+                if part.Parent then
+                    if part.LocalTransparencyModifier ~= 1 then
+                        part.LocalTransparencyModifier = 1
+                    end
+                else
+                    tracked[part] = nil
+                end
+            end
+        end
+    end
+end
+
+function engine:refreshFamily(familyName)
+    local skinId = self.selections[familyName]
+    local record = skinId and db.skins[skinId]
+    local family = db.families[familyName]
+    if not record or not family or not record.available then return end
+    local roots = findRoots(family)
+    if record.kind == "appearance" then
+        if self.overlays[familyName] then self:clearOverlays(familyName) end
+        local allowed = {}
+        for _, mid in ipairs(record.meshIds or {}) do allowed[tostring(mid)] = true end
+        -- Family selectors add previously tested holstered/reload alternatives
+        -- not present in a store-preview candidate's exact MeshId list.
+        for _, mid in ipairs(family.meshIds or {}) do allowed[tostring(mid)] = true end
+        for _, mid in ipairs(family.excludedMeshIds or {}) do allowed[tostring(mid)] = nil end
+        local counts = {}
+        for ctx, root in pairs(roots) do
+            local n = 0
+            for _, part in ipairs(root:GetDescendants()) do
+                if ownContextPart(part) and allowed[ident(part.MeshId)] then
+                    self:applyAppearance(part, record, false)
+                    n += 1
+                end
+            end
+            counts[ctx] = n
+        end
+        self.lastStatus[familyName] = counts
+        return
+    end
+    if record.kind ~= "variantModel" and record.kind ~= "modelSwap" then return end
+    local overlays = self.overlays[familyName] or {}
+    self.overlays[familyName] = overlays
+    -- Holster clone is destroyed while equipped.  Also hide the original
+    -- holstered gun in this state: the game may still render it during a
+    -- first-person/third-person zoom transition.
+    local activeContexts = roots.equipped and {equipped = roots.equipped, firstPerson = roots.firstPerson}
+        or {holstered = roots.holstered}
+    for ctx, entry in pairs(overlays) do
+        if entry.root ~= activeContexts[ctx] or entry.skinId ~= skinId
+            or not entry.holder or not entry.holder.Parent then
+            if entry.holder and entry.holder.Parent then entry.holder:Destroy() end
+            overlays[ctx] = nil
+        end
+    end
+    for ctx, root in pairs(activeContexts) do
+        if root and not overlays[ctx] then
+            local holder, err
+            if record.kind == "variantModel" then
+                holder, err = self:buildVariant(root, record)
+            else
+                holder, err = self:buildModelSwap(root, record)
+            end
+            if holder then
+                overlays[ctx] = {root = root, holder = holder, skinId = skinId}
+            else
+                warnOnce("source:" .. skinId .. ":" .. ctx,
+                    "[SkinChanger] Could not build " .. skinId .. " " .. ctx .. ": " .. tostring(err))
+            end
+        end
+    end
+
+    -- Track which originals must stay invisible. Never hide a new live weapon
+    -- when its corresponding replacement was not successfully constructed.
+    local hideRoots = {}
+    for ctx, root in pairs(activeContexts) do
+        local entry = overlays[ctx]
+        if root and entry and entry.holder and entry.holder.Parent then
+            hideRoots[root] = true
+            self:hideOriginal(familyName, root, entry.holder)
+        end
+    end
+    if roots.equipped and roots.holstered and overlays.equipped
+        and overlays.equipped.holder and overlays.equipped.holder.Parent then
+        -- The actual back model can persist briefly even when equipped.
+        hideRoots[roots.holstered] = true
+        self:hideOriginal(familyName, roots.holstered, nil)
+    end
+
+    -- Unhide parts from roots that should no longer be hidden. This ensures
+    -- the holstered gun isn't left invisible if the overlay cannot be built.
+    local tracked = self.hidden[familyName]
+    if tracked then
+        for part, old in pairs(tracked) do
+            local shouldHide = false
+            if part.Parent then
+                for root in pairs(hideRoots) do
+                    if part:IsDescendantOf(root) then
+                        shouldHide = true
+                        break
+                    end
+                end
+            end
+            if not shouldHide then
+                if part.Parent then part.LocalTransparencyModifier = old end
+                tracked[part] = nil
+            end
+        end
+    end
+    self:enforceHidden()
+end
+-- Optional purely local, data-driven cosmetics. The Gold SKS record sets
+-- particle tint only; no gameplay modules, firing hooks, or sounds are run.
+function engine:restoreCosmeticEffects()
+    for emitter, previous in pairs(self.fxOriginals) do
+        if emitter.Parent then
+            pcall(function()
+                emitter.Color = previous.Color
+                emitter.Brightness = previous.Brightness
+                emitter.LightEmission = previous.LightEmission
+            end)
+        end
+        self.fxOriginals[emitter] = nil
+    end
+end
+
+function engine:refreshCosmeticEffects()
+    local seen = {}
+    for familyName, skinId in pairs(self.selections) do
+        local record = db.skins[skinId]
+        local fx = record and record.cosmeticEffects
+        local tint = fx and fx.particleTint
+        if tint and type(tint.rgb) == "table" and #tint.rgb == 3 then
+            local family = db.families[familyName]
+            local roots = family and findRoots(family) or {}
+            local desired = ColorSequence.new(Color3.fromRGB(
+                tint.rgb[1], tint.rgb[2], tint.rgb[3]
+            ))
+            -- Only currently held weapon and its first-person counterpart.
+            -- Do not change the on-back model, other weapons, or cloned overlays.
+            for _, context in ipairs({"equipped", "firstPerson"}) do
+                local root = roots[context]
+                if root then
+                    for _, emitter in ipairs(root:GetDescendants()) do
+                        if emitter:IsA("ParticleEmitter")
+                            and not emitter:FindFirstAncestor("__SkinChangerOverlay") then
+                            seen[emitter] = true
+                            if not self.fxOriginals[emitter] then
+                                self.fxOriginals[emitter] = {
+                                    Color = emitter.Color,
+                                    Brightness = emitter.Brightness,
+                                    LightEmission = emitter.LightEmission,
+                                }
+                            end
+                            -- The game's own effect logic may replace these values.
+                            -- Reapply only when needed, preserving the original snapshot.
+                            local ok = pcall(function()
+                                emitter.Color = desired
+                                emitter.Brightness = tint.brightness or 15
+                                emitter.LightEmission = tint.lightEmission or 1
+                            end)
+                            if not ok then
+                                warnOnce("fx:" .. skinId,
+                                    "[SkinChanger] Could not tint a cosmetic particle emitter for " .. skinId)
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+    -- Change to another skin, holster, switch weapons, or lose the old VM:
+    -- the original emitter properties must be restored promptly.
+    for emitter, previous in pairs(self.fxOriginals) do
+        if not seen[emitter] then
+            if emitter.Parent then
+                pcall(function()
+                    emitter.Color = previous.Color
+                    emitter.Brightness = previous.Brightness
+                    emitter.LightEmission = previous.LightEmission
+                end)
+            end
+            self.fxOriginals[emitter] = nil
+        end
+    end
+end
+
+function engine:refresh()
+    if not self.running then return end
+    for familyName in pairs(self.selections) do
+        local okRefresh, err = pcall(function() self:refreshFamily(familyName) end)
+        if not okRefresh then
+            warnOnce("refresh:" .. familyName .. ":" .. tostring(err),
+                "[SkinChanger] Refresh error for " .. familyName .. ": " .. tostring(err))
+        end
+    end
+    local okFx, fxErr = pcall(function() self:refreshCosmeticEffects() end)
+    if not okFx then warnOnce("fx-refresh:" .. tostring(fxErr),
+        "[SkinChanger] Cosmetic FX refresh error:", fxErr) end
+end
+function engine:setSkin(skinId, familyOverride)
+    if not self.running then warn("[SkinChanger] Disabled; reinstall to enable.") return false end
+    local record = db.skins[skinId]
+    if not record or not record.available then
+        warn("[SkinChanger] Skin not available:", skinId)
+        return false
+    end
+    local target = familyOverride or record.family
+    local family = db.families[target]
+    if not family or (target ~= record.family and family.skinSourceFamily ~= record.family) then
+        warn("[SkinChanger] Skin/family mismatch:", tostring(skinId), tostring(target))
+        return false
+    end
+    if self.selections[target] ~= skinId then
+        self:clearOverlays(target)
+        self.selections[target] = skinId
+    end
+    self:refreshFamily(target)
+    self:refreshCosmeticEffects()
+    self:enforceHidden()
+    local counts = self.lastStatus[target] or {}
+    print("[SkinChanger]", skinId, "->", target,
+        "equipped:", counts.equipped or 0,
+        "FP:", counts.firstPerson or 0,
+        "holstered:", counts.holstered or 0)
+    if record.multiAppearanceNeedsReview then
+        warnOnce("multi:" .. skinId, "[SkinChanger] This skin has additional per-part PBR maps awaiting mapping:", skinId)
+    end
+    return true
+end
+function engine:listSkins(familyName)
+    local source = db.families[familyName] and (db.families[familyName].skinSourceFamily or familyName)
+    if not source then warn("[SkinChanger] Unknown family:", familyName) return {} end
+    local names = {}
+    for id, rec in pairs(db.skins) do
+        if rec.family == source and rec.available then names[#names+1] = id end
+    end
+    table.sort(names)
+    print("[SkinChanger]", familyName, #names, "available skins:\n" .. table.concat(names, "\n"))
+    return names
+end
+function engine:revert(familyName)
+    if not self.running then return end
+    if familyName then
+        self:clearOverlays(familyName)
+        self.selections[familyName] = nil
+        -- All captured original appearances are restored. Other selected families
+        -- are immediately reapplied by the next refresh tick.
+    else
+        for f in pairs(self.selections) do self:clearOverlays(f) end
+        self.selections = {}
+    end
+    for part in pairs(self.baseline) do self:restorePart(part) end
+    self:refreshCosmeticEffects()
+    if familyName then self:refresh() end
+    print("[SkinChanger] Reverted", familyName or "all families")
+end
+function engine:disable()
+    if not self.running then return end
+    self.running = false
+    self:restoreCosmeticEffects()
+    if self.hideStepConnected then
+        pcall(function() RunService:UnbindFromRenderStep(self.hideStepName) end)
+        self.hideStepConnected = false
+    end
+    if self.renderConnection then
+        self.renderConnection:Disconnect()
+        self.renderConnection = nil
+    end
+    for f in pairs(self.overlays) do self:clearOverlays(f) end
+    for part, old in pairs(self.baseline) do
+        self:restorePart(part)
+        if old.sa then old.sa:Destroy() end
+    end
+    self.baseline = setmetatable({}, {__mode = "k"})
+    self.selections = {}
+    self.overlays = {}
+    self.hidden = {}
+    print("[SkinChanger] Disabled; originals restored.")
+end
+
+-- Late-frame visual masking prevents zoom/equip scripts from showing the
+-- original underneath the replacement between normal refresh ticks.
+local bound = pcall(function()
+    RunService:BindToRenderStep(engine.hideStepName, Enum.RenderPriority.Last.Value + 10, function()
+        engine:enforceHidden()
+    end)
+end)
+if bound then
+    engine.hideStepConnected = true
+else
+    engine.renderConnection = RunService.RenderStepped:Connect(function()
+        engine:enforceHidden()
+    end)
+end
+
+function engine:status(familyName)
+    local family = db.families[familyName]
+    if not family then warn("[SkinChanger] Unknown family:", tostring(familyName)) return end
+    local roots = findRoots(family)
+    local overlays = self.overlays[familyName] or {}
+    print("[SkinChanger status]", familyName, "skin:", tostring(self.selections[familyName]),
+        "equipped:", roots.equipped and roots.equipped:GetFullName() or "none",
+        "FP:", roots.firstPerson and roots.firstPerson:GetFullName() or "none",
+        "holster:", roots.holstered and roots.holstered:GetFullName() or "none")
+    for _, ctx in ipairs({"equipped", "firstPerson", "holstered"}) do
+        local entry = overlays[ctx]
+        print("[SkinChanger overlay]", ctx, entry and entry.holder and entry.holder.Parent and "ACTIVE" or "none")
+    end
+end
+
+G.SkinChanger = engine
+task.spawn(function()
+    while engine.running do
+        engine:refresh()
+        local hasReplacement = false
+        for _, skinId in pairs(engine.selections) do
+            local record = db.skins[skinId]
+            if record and (record.kind == "variantModel" or record.kind == "modelSwap") then
+                hasReplacement = true
+                break
+            end
+        end
+        task.wait(hasReplacement and 0.08 or 0.25)
+    end
+end)
+print("[SkinChanger] GitHub core v0.4.3 started, database", db.version,
+      "| select with getgenv().SkinChanger:setSkin('sks_m1garand')")
