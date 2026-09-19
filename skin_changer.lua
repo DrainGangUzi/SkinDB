@@ -1,4 +1,4 @@
--- Universal cosmetic skin changer, GitHub DB loader, core v0.4.3.
+-- Universal cosmetic skin changer, GitHub DB loader, core v0.4.4 (mixed-Part variant fix).
 -- Fetches skins.json from the matching SkinDB repository.
 -- Optional override: getgenv().SKIN_DB_URL = "https://raw.githubusercontent.com/.../skins.json"
 -- Does not execute CustomApply, ClientConfig or ServerConfig.
@@ -338,7 +338,13 @@ function engine:buildVariant(root, record)
     for i, clonePart in ipairs(copiedParts) do
         local original = sourceParts[i]
         local overrides = record.sourceMeshOverrides
-        local perMesh = overrides and overrides[ident(original.MeshId)]
+        -- Models may contain ordinary Parts (e.g. mare_trickshot.Handle).
+        -- Only MeshParts expose MeshId; keep non-mesh anchors for placement,
+        -- but never try to look up their mesh-specific appearance overrides.
+        local perMesh = nil
+        if original:IsA("MeshPart") and clonePart:IsA("MeshPart") and overrides then
+            perMesh = overrides[ident(original.MeshId)]
+        end
         if perMesh and clonePart:IsA("MeshPart") then
             if perMesh.textureID and ident(clonePart.TextureID) ~= ident(perMesh.textureID) then
                 clonePart.TextureID = asset(perMesh.textureID)
