@@ -1,8 +1,3 @@
--- Universal cosmetic skin changer, GitHub DB loader, core v0.4.5 CSM part-matching test.
--- Fetches skins.json from the matching SkinDB repository.
--- Optional override: getgenv().SKIN_DB_URL = "https://raw.githubusercontent.com/.../skins.json"
--- Does not execute CustomApply, ClientConfig or ServerConfig.
-
 local G = getgenv()
 local DB_URL = G.SKIN_DB_URL or "https://raw.githubusercontent.com/DrainGangUzi/SkinDB/main/skins.json"
 local Players = game:GetService("Players")
@@ -24,7 +19,6 @@ if db.schemaVersion ~= "1.0.0" then
     return
 end
 
--- Stop old installers only after the new DB has loaded successfully.
 if G.__M4DBTest then pcall(function() G.__M4DBTest:disable() end) end
 if G.__M4AppearanceEngine then pcall(function() G.__M4AppearanceEngine:disable() end) end
 if G.__GoldFXTest then
@@ -79,8 +73,7 @@ local function matchesRoot(root, family)
     for _, name in ipairs(family.runtimeNames or {}) do
         if normal(root.Name) == normal(name) then return true end
     end
-    -- This fallback identifies a differently named equipped Tool from known body meshes.
-    -- Require two matches for multi-piece firearms to avoid a shared bullet false positive.
+
     local ids = family.meshIds or {}
     if #ids == 0 then return false end
     local count = countFamilyMeshes(root, family)
@@ -103,8 +96,7 @@ local function findRoots(family)
         for _, obj in ipairs(display:GetDescendants()) do
             if obj:IsA("Model") or obj:IsA("Tool") then models[#models + 1] = obj end
         end
-        -- Prefer exact runtime names before mesh fallback. Otherwise a broad
-        -- holster-container Model could accidentally include unrelated weapons.
+
         for _, obj in ipairs(models) do
             for _, name in ipairs(family.runtimeNames or {}) do
                 if normal(obj.Name) == normal(name) then
@@ -139,13 +131,13 @@ end
 local engine = {
     running = true,
     database = db,
-    selections = {},  -- family -> skin ID; G18 can independently select a G17 skin
+    selections = {},  
     baseline = setmetatable({}, {__mode = "k"}),
-    overlays = {},    -- family -> context -> {root, skinId, holder, sourceKey}
-    hidden = {},      -- family -> part -> original LocalTransparencyModifier
+    overlays = {},   
+    hidden = {},      
     lastStatus = {},
     warned = {},
-    fxOriginals = setmetatable({}, {__mode = "k"}), -- emitter -> original cosmetic properties
+    fxOriginals = setmetatable({}, {__mode = "k"}), 
     hideStepName = "SkinChangerCosmeticHide_" .. tostring(player.UserId),
     hideStepConnected = false,
     renderConnection = nil,
@@ -186,9 +178,6 @@ function engine:applySurface(part, wanted, remove)
                 current[key] = asset(id)
             end
         else
-            -- Partial PBR record: a LIVE mesh must not inherit missing
-            -- map fields from the previously selected skin.
-            -- For exact cosmetic clones, preserve the source's own maps.
             local original = self.baseline[part]
             if original then
                 local baselineMap = original.sa and original.sa[key] or ""
@@ -209,14 +198,12 @@ function engine:applyAppearance(part, record, isClone)
             part.TextureID = asset(wantedTexture)
         end
     else
-        -- The new PBR-only skin has no known base texture. Restore the
-        -- original baseline instead of leaving the previous skin's TextureID.
+
         local original = self.baseline[part]
         if original and part.TextureID ~= original.texture then
             part.TextureID = original.texture
         end
     end
-    -- Do NOT mutate MeshId, Size, CFrame, SpecialMesh.Scale, or physical state.
     self:applySurface(part, record.surfaceAppearance, record.removeSurfaceAppearance)
 end
 
@@ -283,7 +270,6 @@ local function sourceVariant(path)
     return nil
 end
 local function cleanCosmetic(root)
-    -- Never permit modules/scripts or source welds to execute/attach gameplay.
     for _, obj in ipairs(root:GetDescendants()) do
         if obj:IsA("LuaSourceContainer") or obj:IsA("JointInstance") or obj:IsA("WeldConstraint") then
             obj:Destroy()
@@ -314,9 +300,7 @@ local function placeAndWeld(part, liveAnchor, rel)
     weld.Part1 = part
     weld.Parent = part
 end
--- Match each copied part to its exact original through a stable hierarchy key.
--- Duplicate names are disambiguated by sibling index; this also handles normal
--- Parts (such as mare_trickshot.Handle) without reading a nonexistent MeshId.
+
 local function partPath(part, modelRoot)
     local tokens = {}
     local cursor = part
@@ -360,7 +344,6 @@ function engine:buildVariant(root, record)
     if not originalParts then return nil, mapError end
     if originalCount == 0 then return nil, "source has no parts" end
 
-    -- Clone while unparented; strip scripts/gameplay joints before adding to Workspace.
     local holder = cosmeticsHolder(root)
     local replica = src:Clone()
     if not replica then return nil, "source model could not be cloned" end
@@ -421,7 +404,6 @@ function engine:buildModelSwap(root, record)
         end
         local cosmetic = sourcePart:Clone()
         cleanCosmetic(cosmetic)
-        -- The exact imported mesh is cloned; no MeshId+Size reconstruction.
         cosmetic.Parent = holder
         if record.surfaceAppearance then self:applySurface(cosmetic, record.surfaceAppearance, false) end
         local rel = partRecord.relativeCFrame
@@ -434,9 +416,7 @@ function engine:buildModelSwap(root, record)
     holder.Parent = root
     return holder
 end
--- Record original LTM once, and never hide a cosmetic overlay as if it were the source.
--- `holder == nil` is intentional for a persistent holstered original while the
--- equipped cosmetic replaces it; the old holstered clone is destroyed separately.
+
 function engine:hideOriginal(familyName, root, holder)
     if not root then return end
     self.hidden[familyName] = self.hidden[familyName] or setmetatable({}, {__mode = "k"})
@@ -450,10 +430,6 @@ function engine:hideOriginal(familyName, root, holder)
     end
 end
 
--- Camera/weapon scripts can overwrite LocalTransparencyModifier every frame.
--- A 0.35-second polling loop alone permits a brief flash of the old skin.
--- Force existing tracked originals invisible late in the local render frame;
--- no geometry, gameplay or replicated Transparency property is changed here.
 function engine:enforceHidden()
     if not self.running then return end
     for familyName, tracked in pairs(self.hidden) do
@@ -483,8 +459,6 @@ function engine:refreshFamily(familyName)
         if self.overlays[familyName] then self:clearOverlays(familyName) end
         local allowed = {}
         for _, mid in ipairs(record.meshIds or {}) do allowed[tostring(mid)] = true end
-        -- Family selectors add previously tested holstered/reload alternatives
-        -- not present in a store-preview candidate's exact MeshId list.
         for _, mid in ipairs(family.meshIds or {}) do allowed[tostring(mid)] = true end
         for _, mid in ipairs(family.excludedMeshIds or {}) do allowed[tostring(mid)] = nil end
         local counts = {}
@@ -504,9 +478,6 @@ function engine:refreshFamily(familyName)
     if record.kind ~= "variantModel" and record.kind ~= "modelSwap" then return end
     local overlays = self.overlays[familyName] or {}
     self.overlays[familyName] = overlays
-    -- Holster clone is destroyed while equipped.  Also hide the original
-    -- holstered gun in this state: the game may still render it during a
-    -- first-person/third-person zoom transition.
     local activeContexts = roots.equipped and {equipped = roots.equipped, firstPerson = roots.firstPerson}
         or {holstered = roots.holstered}
     for ctx, entry in pairs(overlays) do
